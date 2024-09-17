@@ -25,7 +25,10 @@ function pages() {
             includePaths: 'app/components'
         }))
         .pipe(typograf({
-            locale: ['ru', 'en-US']
+            locale: ['ru', 'en-US'],
+            safeTags: [
+                ['<no-typography>', '</no-typography>']
+            ]
         }))
         .pipe(dest('app'))
         .pipe(browserSync.stream())
