@@ -48,6 +48,7 @@ function images() {
         .pipe(imagemin())
 
         .pipe(dest('app/images/'))
+        .pipe(browserSync.stream())
 }
 
 function sprite() {
