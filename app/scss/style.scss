@@ -776,6 +776,12 @@ section {
     }
 }
 
+.footer {
+    &__logo {
+        margin-bottom: 12px;
+    }
+}
+
 @import '../scss/_min1000';
 @import '../scss/_1200';
 @import '../scss/_992';
