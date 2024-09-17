@@ -3,7 +3,15 @@
 @import '../scss/keyframes';
 
 :root {
-    
+    --white: #fff;
+    --black: #000;
+    --grey-text: #D1D1D1;
+    --green: #00FF94;
+    --blue: #0057FF;
+    --pale-blue: #5497FC;
+    --yellow: #FFF500;
+    --pink: #DB00FF;
+    --gradient: #00FF94;
 }
 
 * {
@@ -28,6 +36,67 @@
         background-color: var(--violet);
         border-radius: 5px;
         border: 3px solid var(--body-bg);
+    }
+}
+
+body {
+    background: var(--black);
+}
+
+h1,
+.h1 {
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+h2,
+.h2 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+h2,
+.h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.text1 {
+    font-family: 'Rubik', serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.text2 {
+    font-family: 'Rubik', serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+}
+
+.banner {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.btn {
+    &-transparent {
+        display: inline-block;
+        padding: 10px 35px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: -0.03em;
+        text-align: center;
+        border: 1px solid var(--gradient);
+        border-radius: 8px
     }
 }
 
