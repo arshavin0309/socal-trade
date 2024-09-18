@@ -33,3 +33,29 @@ window.onscroll = function () {
         body.style = "margin: 0"
     }
 }
+
+// кнопка вверх
+document.addEventListener('DOMContentLoaded', () => {
+    let goTopBtn = document.querySelector('.upButton');
+
+    window.addEventListener('scroll', trackScroll);
+    goTopBtn.addEventListener('click', backToTop);
+
+    function trackScroll() {
+        let scrolled = window.pageYOffset;
+
+        if (scrolled > 100) {
+            goTopBtn.classList.add('show');
+        }
+        if (scrolled < 100) {
+            goTopBtn.classList.remove('show');
+        }
+    }
+
+    function backToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+})

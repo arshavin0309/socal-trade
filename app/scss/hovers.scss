@@ -1,3 +1,30 @@
 @media (min-width: 1000px) {
-    
+    .invest-main__item:hover::before {
+        animation: rotate 1s linear 0s infinite normal none;
+        backface-visibility: hidden;
+    }
+
+    .start-main__item {
+        transition: var(--transition);
+
+        &:hover {
+            transform: translateY(-50px);
+        }
+    }
+
+    .btn {
+        &:hover {}
+
+        &-transparent {
+            &:hover {}
+        }
+
+        &-white {
+            &:hover {}
+        }
+
+        &-black {
+            &:hover {}
+        }
+    }
 }
