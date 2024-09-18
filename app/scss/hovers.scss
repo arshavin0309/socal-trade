@@ -20,6 +20,24 @@
 
             .sub-menu {
                 transition: var(--transition);
+
+                a {
+                    transition: var(--transition);
+
+                    &:hover {
+                        color: var(--blue);
+                    }
+                }
+            }
+        }
+
+        &.scrolled {
+            .menu {
+                a {
+                    &:hover {
+                        color: var(--green);
+                    }
+                }
             }
         }
     }
