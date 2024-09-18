@@ -919,7 +919,8 @@ section {
         }
 
         .sub-menu {
-            display: grid;
+            display: flex;
+            flex-direction: column;
             gap: 12px;
             margin-top: 12px;
 
@@ -937,7 +938,8 @@ section {
     }
 
     &__documents {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 12px;
 
         a {

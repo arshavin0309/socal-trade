@@ -13,18 +13,78 @@
     }
 
     .btn {
-        &:hover {}
+        transition: var(--transition);
+
+        &:hover {
+            color: var(--white);
+            background: #3F3E3E;
+            outline: 1px solid var(--green);
+        }
 
         &-transparent {
-            &:hover {}
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--black);
+                background: var(--white);
+                border: 1px solid var(--white);
+            }
         }
 
         &-white {
-            &:hover {}
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--white);
+                background: #3F3E3E;
+                outline: 1px solid var(--green);
+            }
         }
 
         &-black {
-            &:hover {}
+            transition: var(--transition);
+
+            &:hover {
+                background: #000000B2;
+            }
+        }
+    }
+
+    .successes {
+        &__el {
+            transition: var(--transition);
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+
+    .footer {
+        .menu {
+            .sub-menu {
+                .menu-item {
+                    a {
+                        transition: var(--transition);
+                    }
+
+                    &:hover {
+                        a {
+                            color: var(--green);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__documents {
+            a {
+                transition: var(--transition);
+
+                &:hover {
+                    color: var(--green);
+                }
+            }
         }
     }
 }
