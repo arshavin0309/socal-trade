@@ -178,7 +178,7 @@ section {
                 top: -35px;
                 right: 0;
                 width: 50%;
-                height: 70%;
+                height: 350px;
                 background: var(--green);
                 filter: blur(150px);
             }
@@ -187,10 +187,10 @@ section {
                 content: '';
                 z-index: -1;
                 position: absolute;
-                bottom: -80px;
+                top: 200px;
                 left: 0;
                 width: 50%;
-                height: 70%;
+                height: 400px;
                 background: var(--blue);
                 filter: blur(150px);
             }
@@ -202,6 +202,10 @@ section {
         flex-direction: column;
         gap: 30px;
         align-items: center;
+    }
+
+    &.error-hero {
+        margin-top: 210px;
     }
 }
 
@@ -1069,17 +1073,65 @@ section {
     background: var(--green);
     border-radius: 50%;
     padding: 10px;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    &.show {
+        transition: var(--transition);
+        transform: scale(1);
+        pointer-events: all;
+    }
 }
 
-.upButton img {
-    width: 30px;
-    height: 30px;
+.error-hero {
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 400px;
+        background: url(../images/error-bg.svg) center / contain no-repeat;
+    }
 }
 
-.upButton.show {
-    transition: var(--transition);
-    transform: scale(1);
-    pointer-events: all;
+.hero-doc {
+    .container {
+        padding-top: 120px;
+    }
+}
+
+.documents-doc {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 30px 30px 55px;
+        border: 1px solid #FFFFFF3A;
+        background: #FFFFFF1A;
+        border-radius: 25px;
+
+        a {
+            text-decoration: none;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: url(../images/doc-icon.svg) center / contain no-repeat;
+        }
+    }
 }
 
 @import '../scss/hovers';
