@@ -19,3 +19,17 @@ if (document.location.pathname === '/quotes.html') { document.title = 'Онла�
 if (document.location.pathname === '/raw-material.html') { document.title = 'Сырье' };
 if (document.location.pathname === '/review.html') { document.title = 'Обзор рынка' };
 if (document.location.pathname === '/training.html') { document.title = 'Обучение трейдингу' };
+
+// появление хедера при скролле
+let body = document.querySelector("body");
+let header = document.querySelector(".header");
+
+window.onscroll = function () {
+    if (pageYOffset > 50) {
+        header.classList.add("scrolled");
+        body.style = "margin-top: 100px"
+    } else {
+        header.classList.remove("scrolled");
+        body.style = "margin: 0"
+    }
+}

@@ -1,5 +1,9 @@
 .choice-main {
-    &__number {
+    &__item {
+        .choice-main__rotate {
+            animation: rotate 20s linear 0s infinite normal none;
+            backface-visibility: hidden;
+        }
     }
 }
 
