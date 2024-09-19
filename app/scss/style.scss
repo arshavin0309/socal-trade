@@ -908,8 +908,6 @@ section {
     }
 
     &__content {
-        padding-bottom: 65px;
-
         h2 {
             margin-bottom: 12px;
             text-align: left;
@@ -948,6 +946,43 @@ section {
     &__content {
         h2 {
             font-size: 48px;
+            margin-bottom: 12px;
+            text-align: left;
+            color: var(--black);
+        }
+
+        p {
+            max-width: 360px;
+            margin-bottom: 30px;
+            color: var(--black);
+        }
+    }
+
+    &__image {
+        width: 315px;
+        height: 405px;
+        transform: translateY(1px);
+        background: image-set(url(../images/banner-1-phone.avif),
+                url(../images/banner-1-phone.webp),
+                url(../images/banner-1-phone.png)) center bottom / contain no-repeat;
+    }
+}
+
+.banner-3 {
+    &__box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 315px;
+        align-items: center;
+        gap: 50px;
+        border-radius: 25px;
+        background: url(../images/banner-1.avif) left bottom / cover no-repeat;
+        padding: 40px 220px 0;
+    }
+
+    &__content {
+        h2 {
+            font-size: 30px;
             margin-bottom: 12px;
             text-align: left;
             color: var(--black);
@@ -1463,17 +1498,56 @@ section {
 }
 
 .basics-training {
+    .container {
+        &::before {
+            z-index: -1;
+            position: absolute;
+            content: '';
+            top: 170px;
+            left: 0;
+            width: 600px;
+            height: 450px;
+            background: #00FF941A;
+            filter: blur(100px);
+        }
+
+        &::after {
+            z-index: -1;
+            position: absolute;
+            content: '';
+            bottom: 35px;
+            left: 0;
+            width: 600px;
+            height: 450px;
+            background: #00FF941A;
+            filter: blur(100px);
+        }
+    }
+
     h2+p {
         color: var(--grey-text);
         text-align: center;
     }
 
     &__list {
+        position: relative;
         width: 100%;
         display: grid;
         gap: 30px;
         margin-top: 30px;
         margin-bottom: 30px;
+
+        &::before {
+            z-index: -1;
+            position: absolute;
+            content: '';
+            top: 310px;
+            right: -120px;
+            width: 600px;
+            height: 450px;
+            background: #0057FF1A;
+            filter: blur(100px);
+        }
     }
 
     &__item {
