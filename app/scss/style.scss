@@ -1696,6 +1696,19 @@ section {
 }
 
 .assets-conditions {
+    .container {
+        &::before {
+            z-index: -1;
+            position: absolute;
+            content: '';
+            width: 400px;
+            height: 650px;
+            top: 145px;
+            left: 50px;
+            background: var(--blue);
+            filter: blur(400px);
+        }
+    }
     &__box {
         width: 100%;
         padding: 10px 30px;
