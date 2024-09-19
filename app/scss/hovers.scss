@@ -173,4 +173,15 @@
             }
         }
     }
+
+    .advantages-indexes {
+        &__image {
+            &:hover {
+                &::before {
+                    animation: rotate 1s linear 0s infinite normal none;
+                    backface-visibility: hidden;
+                }
+            }
+        }
+    }
 }
