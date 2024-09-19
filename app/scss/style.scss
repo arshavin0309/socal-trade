@@ -501,7 +501,9 @@ section {
             position: absolute;
             width: inherit;
             height: inherit;
-            background: url(../images/invest-main-around.png) center / contain no-repeat;
+            background: image-set(url(../images/invest-main-around.avif),
+                    url(../images/invest-main-around.webp),
+                    url(../images/invest-main-around.png)) center / contain no-repeat;
         }
 
         &:nth-child(1) {
@@ -931,6 +933,43 @@ section {
     }
 }
 
+.banner-2 {
+    &__box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 315px;
+        align-items: center;
+        gap: 50px;
+        border-radius: 25px;
+        background: url(../images/banner-1.avif) left bottom / cover no-repeat;
+        padding: 40px 130px 0;
+    }
+
+    &__content {
+        h2 {
+            font-size: 48px;
+            margin-bottom: 12px;
+            text-align: left;
+            color: var(--black);
+        }
+
+        p {
+            max-width: 360px;
+            margin-bottom: 30px;
+            color: var(--black);
+        }
+    }
+
+    &__image {
+        width: 315px;
+        height: 405px;
+        transform: translateY(1px);
+        background: image-set(url(../images/banner-1-phone.avif),
+                url(../images/banner-1-phone.webp),
+                url(../images/banner-1-phone.png)) center bottom / contain no-repeat;
+    }
+}
+
 .footer {
     margin-top: 200px;
     padding-bottom: 60px;
@@ -1148,14 +1187,45 @@ section {
     }
 
     .widget-box {
+        position: relative;
         margin-top: 30px;
         margin-bottom: 30px;
+
+        &::before {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            bottom: -80px;
+            left: -25px;
+            width: 300px;
+            height: 345px;
+            background: var(--blue);
+            filter: blur(200px);
+        }
     }
 }
 
 .choice-platform {
+    .container {
+        &::before {
+            z-index: -1;
+            position: absolute;
+            content: '';
+            width: 500px;
+            height: 300px;
+            top: 185px;
+            right: 55px;
+            background: #0B7844;
+            filter: blur(200px);
+        }
+    }
+
     h2+p {
         text-align: center;
+    }
+
+    p {
+        color: var(--grey-text);
     }
 
     h3 {
@@ -1166,7 +1236,7 @@ section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        margin-top: 120px;
+        margin-top: 90px;
     }
 
     &__item {
@@ -1256,6 +1326,90 @@ section {
             height: 30px;
             background: url(../images/android.png) center / contain no-repeat;
         }
+    }
+}
+
+.conditions-platform {
+    p {
+        color: var(--grey-text);
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    &__image {
+        position: relative;
+        width: 178px;
+        height: 178px;
+        margin: auto;
+        margin-bottom: 15px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: inherit;
+            height: inherit;
+            background: image-set(url(../images/invest-main-around.avif),
+                    url(../images/invest-main-around.webp),
+                    url(../images/invest-main-around.png)) center / contain no-repeat;
+        }
+    }
+
+    &__item {
+        width: 33%;
+
+        &--1 {
+            max-width: 330px;
+
+            .conditions-platform__image {
+                background: url(../images/conditions-platform-image-1.png) center / 62px 43px no-repeat;
+            }
+        }
+
+        &--2 {
+            max-width: 335px;
+
+            .conditions-platform__image {
+                background: url(../images/conditions-platform-image-2.svg) center / 96px 30px no-repeat;
+            }
+        }
+
+        &--3 {
+            max-width: 280px;
+
+            .conditions-platform__image {
+                background: url(../images/conditions-platform-image-3.svg) center / 98px 56px no-repeat;
+            }
+        }
+
+        &--4 {
+            max-width: 395px;
+
+            .conditions-platform__image {
+                background: url(../images/conditions-platform-image-4.svg) center / 93px 56px no-repeat;
+            }
+        }
+
+        &--5 {
+            max-width: 375px;
+
+            .conditions-platform__image {
+                background: url(../images/conditions-platform-image-5.svg) center / 113px 56px no-repeat;
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 30px;
     }
 }
 
