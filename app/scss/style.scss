@@ -1695,6 +1695,50 @@ section {
     }
 }
 
+.assets-conditions {
+    &__box {
+        width: 100%;
+        padding: 10px 30px;
+        margin-top: 30px;
+        border-radius: 25px;
+        background: linear-gradient(111.65deg, #000000 9.13%, rgba(0, 87, 255, 0.75) 40.57%, rgba(0, 255, 148, 0.5) 67.91%, #000000 88.88%);
+        border: 1px solid #FFFFFF80;
+    }
+
+    &__header {
+        display: flex;
+        width: 100%;
+    }
+
+    &__btn {
+        width: 100%;
+        border: none;
+        background: none;
+        color: var(--grey-text);
+        font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: -0.03em;
+        cursor: pointer;
+    }
+
+    &__more {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: -0.03em;
+        border: none;
+        background: none;
+        color: var(--white)
+    }
+}
+
 @import '../scss/hovers';
 @import '../scss/_1200';
 @import '../scss/_992';
