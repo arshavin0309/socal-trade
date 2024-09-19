@@ -31,8 +31,8 @@ window.onscroll = function () {
     } else {
         header.classList.remove("scrolled");
         body.style = "margin: 0"
-    }
-}
+    };
+};
 
 // кнопка вверх
 document.addEventListener('DOMContentLoaded', () => {
@@ -46,16 +46,68 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (scrolled > 100) {
             goTopBtn.classList.add('show');
-        }
+        };
         if (scrolled < 100) {
             goTopBtn.classList.remove('show');
-        }
-    }
+        };
+    };
 
     function backToTop() {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
-    }
-})
+    };
+});
+
+for (let table of document.getElementsByTagName("table")) {
+    let tableOverflow = document.createElement("div");
+    tableOverflow.className = "table-overflow";
+    table.parentElement.replaceChild(tableOverflow, table);
+    tableOverflow.appendChild(table);
+};
+
+let tableBtn = document.querySelectorAll(".assets-conditions__btn");
+let tableTable = document.querySelectorAll(".assets-conditions table");
+
+let tableShow = document.querySelector(".assets-conditions__more");
+let tableTr = document.querySelectorAll(".assets-conditions tr");
+
+if (tableShow) {
+    tableShow.addEventListener("click", () => {
+        if (tableShow.textContent === "Показать еще") {
+            for (let i = 0; i < tableTr.length; i++) {
+                tableTr[i].classList.add("active");
+            }
+            tableShow.textContent = "Скрыть";
+            tableShow.classList.add("active");
+        } else {
+            for (let i = 0; i < tableTr.length; i++) {
+                tableTr[i].classList.remove("active");
+            }
+            tableShow.textContent = "Показать еще";
+            document.getElementById('table').scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            tableShow.classList.remove("active");
+        };
+    });
+};
+
+for (let i = 0; i < tableBtn.length; i++) {
+    tableBtn[i].addEventListener("click", () => {
+        tableShow.textContent = "Показать еще";
+        tableShow.classList.remove('active');
+
+        for (let i = 0; i < tableTr.length; i++) {
+            tableTr[i].classList.remove("active");
+        };
+
+        for (let n = 0; n < tableBtn.length; n++) {
+            tableBtn[n].classList.remove("active");
+            tableTable[n].classList.remove("active");
+        };
+
+        tableBtn[i].classList.add("active");
+        tableTable[i].classList.add("active");
+    });
+};

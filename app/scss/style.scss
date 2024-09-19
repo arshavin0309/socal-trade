@@ -1722,21 +1722,41 @@ section {
         line-height: 130%;
         letter-spacing: -0.03em;
         cursor: pointer;
+        transition: var(--transition);
 
         &:not(:last-child) {
             border-right: 1px solid #FFFFFF80;
         }
+
+        &.active {
+            color: var(--green);
+        }
     }
 
     table {
+        display: none;
         width: 100%;
         border-spacing: 0 4px;
+        animation-name: content;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+
+        &.active {
+            display: table;
+        }
 
         tr {
             background: var(--black);
 
             &:nth-child(n+8) {
                 display: none;
+            }
+
+            &.active {
+                &:nth-child(n+8) {
+                    display: table-row;
+                }
             }
         }
 
