@@ -469,6 +469,10 @@ section {
         .mch-widget {
             width: 100%;
         }
+
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -1981,7 +1985,7 @@ section {
             height: 280px;
             top: -50px;
             right: 60px;
-            background: #5497FC;
+            background: var(--pale-blue);
             filter: blur(200px);
         }
     }
@@ -2360,6 +2364,20 @@ section {
 }
 
 .condition-analytics {
+    .container {
+        &::before {
+            z-index: -1;
+            position: absolute;
+            content: '';
+            top: -50px;
+            right: 60px;
+            width: 500px;
+            height: 290px;
+            background: var(--pale-blue);
+            filter: blur(200px);
+        }
+    }
+
     h2+p {
         max-width: 1170px;
         margin: auto;
@@ -2371,6 +2389,51 @@ section {
     h1 {
         max-width: 910px;
         margin: auto;
+    }
+}
+
+.widgets-analytics {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: row;
+        gap: 30px;
+
+        &::before {
+            z-index: -1;
+            position: absolute;
+            content: '';
+            top: -50px;
+            right: 60px;
+            width: 500px;
+            height: 290px;
+            background: var(--pale-blue);
+            filter: blur(200px);
+        }
+    }
+
+    &__box {
+        width: 440px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .widget-box {
+            margin: 0;
+
+            &__nav {
+                display: none;
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: 30px;
+
+        &+p {
+            text-align: center;
+        }
     }
 }
 
