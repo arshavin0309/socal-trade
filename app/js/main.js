@@ -111,3 +111,11 @@ for (let i = 0; i < tableBtn.length; i++) {
         tableTable[i].classList.add("active");
     });
 };
+
+$(function () {
+    $(".accordion").accordion({
+        active: false,
+        collapsible: true,
+        heightStyle: "content",
+    });
+});
