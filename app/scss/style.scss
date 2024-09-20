@@ -2613,6 +2613,86 @@ section {
     }
 }
 
+.hero-calendar {
+    h1 {
+        text-transform: none;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.find-calendar {
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: grid;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 65px;
+        border-radius: 16px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 87, 255, 0.1) 20.5%, rgba(0, 87, 255, 0) 74.5%);
+
+        &:nth-child(1) {
+            .find-calendar__image {
+                background: image-set(url(../images/basics-training-image-1.avif), url(../images/basics-training-image-1.webp), url(../images/basics-training-image-1.png)) center / contain no-repeat;
+                mix-blend-mode: luminosity;
+            }
+        }
+
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(84, 151, 252, 0.1) 20.5%, rgba(84, 151, 252, 0) 74.5%);
+
+            .find-calendar__image {
+                background: image-set(url(../images/basics-training-image-2.avif), url(../images/basics-training-image-2.webp), url(../images/basics-training-image-2.png)) center / contain no-repeat;
+                mix-blend-mode: luminosity;
+            }
+
+            p {
+                max-width: 550px;
+            }
+        }
+
+        &:nth-child(3) {
+            h3 {
+                max-width: 100%;
+            }
+
+            .find-calendar__image {
+                background: image-set(url(../images/basics-training-image-3.avif), url(../images/basics-training-image-3.webp), url(../images/basics-training-image-3.png)) center / contain no-repeat;
+                mix-blend-mode: luminosity;
+            }
+        }
+    }
+
+    h3 {
+        max-width: 450px;
+        text-transform: uppercase;
+    }
+
+    &__image {
+        min-width: 300px;
+        height: 100%;
+        max-height: 200px;
+    }
+
+    &__box {
+        display: grid;
+        gap: 30px;
+        max-width: 605px;
+    }
+}
+
 @import '../scss/hovers';
 @import '../scss/_1200';
 @import '../scss/_992';
