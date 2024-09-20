@@ -465,6 +465,10 @@ section {
         border: 1px solid rgba(255, 255, 255, 0.228);
         border-top: none;
         border-radius: 0 0 25px 25px;
+
+        .mch-widget {
+            width: 100%;
+        }
     }
 }
 
@@ -2342,6 +2346,31 @@ section {
         max-width: 440px;
         margin-bottom: 15px;
         text-transform: uppercase;
+    }
+}
+
+.hero-analytics {
+    h1 {
+        text-transform: none;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.condition-analytics {
+    h2+p {
+        max-width: 1170px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.calendar-analytics {
+    h1 {
+        max-width: 910px;
+        margin: auto;
     }
 }
 
