@@ -2522,6 +2522,97 @@ section {
     }
 }
 
+.how-quotes {
+    h2+p {
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        gap: 20px;
+    }
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    &__item {
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        padding: 65px;
+        border-radius: 15px;
+
+        &:nth-child(1) {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 87, 255, 0.1) 20.5%, rgba(0, 87, 255, 0) 74.5%);
+
+            .how-quotes__image {
+                background: image-set(url(../images/basics-training-image-1.avif), url(../images/basics-training-image-1.webp), url(../images/basics-training-image-1.png)) center / contain no-repeat;
+                mix-blend-mode: luminosity;
+            }
+        }
+
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(84, 151, 252, 0.3) 20.5%, rgba(84, 151, 252, 0) 74.5%);
+
+            .how-quotes__image {
+                background: image-set(url(../images/basics-training-image-2.avif), url(../images/basics-training-image-2.webp), url(../images/basics-training-image-2.png)) center / contain no-repeat;
+                mix-blend-mode: luminosity;
+            }
+        }
+
+        &:nth-child(3) {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 87, 255, 0.1) 20.5%, rgba(0, 87, 255, 0) 74.5%);
+
+            .how-quotes__image {
+                background: image-set(url(../images/basics-training-image-3.avif), url(../images/basics-training-image-3.webp), url(../images/basics-training-image-3.png)) center / contain no-repeat;
+                mix-blend-mode: luminosity;
+            }
+        }
+
+        &:nth-child(4) {
+            flex-direction: row-reverse;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 255, 148, 0.2) 20.5%, rgba(0, 255, 148, 0) 74.5%);
+
+            .how-quotes__image {
+                background: image-set(url(../images/basics-training-image-2.avif), url(../images/basics-training-image-2.webp), url(../images/basics-training-image-2.png)) center / contain no-repeat;
+                mix-blend-mode: luminosity;
+            }
+        }
+
+        &:nth-child(5) {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 87, 255, 0.1) 20.5%, rgba(0, 87, 255, 0) 74.5%);
+
+            .how-quotes__image {
+                background: image-set(url(../images/basics-training-image-3.avif), url(../images/basics-training-image-3.webp), url(../images/basics-training-image-3.png)) center / contain no-repeat;
+                mix-blend-mode: luminosity;
+            }
+        }
+
+        &:nth-child(6) {
+            flex-direction: row-reverse;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 87, 255, 0.3) 20.5%, rgba(0, 87, 255, 0) 74.5%);
+
+            .how-quotes__image {
+                background: image-set(url(../images/basics-training-image-1.avif), url(../images/basics-training-image-1.webp), url(../images/basics-training-image-1.png)) center / contain no-repeat;
+                mix-blend-mode: luminosity;
+            }
+        }
+    }
+
+    &__image {
+        min-width: 300px;
+    }
+
+    &__box {
+        max-width: 605px;
+        display: grid;
+        gap: 30px;
+        justify-items: start;
+    }
+}
+
 @import '../scss/hovers';
 @import '../scss/_1200';
 @import '../scss/_992';
