@@ -1882,6 +1882,10 @@ section {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
         padding: 20px;
         font-family: 'Rubik', sans-serif;
         font-size: 20px;
@@ -1892,6 +1896,21 @@ section {
         background: none;
         color: var(--white);
         cursor: pointer;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url(../images/arrow-bottom.svg) center / contain no-repeat;
+            transition: var(--transition);
+        }
+
+        &.active {
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
     }
 }
 
