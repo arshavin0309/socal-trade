@@ -1722,6 +1722,10 @@ section {
     }
 
     &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
         width: 100%;
         padding: 20px;
         border: none;
@@ -1734,6 +1738,7 @@ section {
         letter-spacing: -0.03em;
         cursor: pointer;
         transition: var(--transition);
+        white-space: nowrap;
 
         &:not(:last-child) {
             border-right: 1px solid #FFFFFF80;
@@ -1741,6 +1746,70 @@ section {
 
         &.active {
             color: var(--green);
+
+            &::before {
+                filter: brightness(0) saturate(100%) invert(73%) sepia(66%) saturate(1644%) hue-rotate(96deg) brightness(103%) contrast(101%);
+            }
+        }
+
+        &:nth-child(1) {
+            &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(../images/assets-conditions-btn-1.svg) center / contain no-repeat;
+            }
+        }
+
+        &:nth-child(2) {
+            &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(../images/assets-conditions-btn-2.svg) center / contain no-repeat;
+            }
+        }
+
+        &:nth-child(3) {
+            &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(../images/assets-conditions-btn-3.svg) center / contain no-repeat;
+            }
+        }
+
+        &:nth-child(4) {
+            &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(../images/assets-conditions-btn-4.svg) center / contain no-repeat;
+            }
+        }
+
+        &:nth-child(5) {
+            &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(../images/assets-conditions-btn-5.svg) center / contain no-repeat;
+            }
+        }
+
+        &:nth-child(6) {
+            &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(../images/assets-conditions-btn-6.svg) center / contain no-repeat;
+            }
         }
     }
 
