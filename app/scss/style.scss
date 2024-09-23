@@ -2993,7 +2993,6 @@ section {
     h2+p {
         max-width: 880px;
         margin: auto;
-        text-align: center;
     }
 
     &__box {
@@ -3001,11 +3000,143 @@ section {
         border-radius: 25px;
         background: #3535354D;
         border-radius: 25px;
+        border: 1px solid #5E5E5E4D
     }
 
     &__image {
-        width: 100%;
         border-radius: 12px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.protection-about {
+    h2+p {
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: start;
+        margin-top: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 30px;
+        padding: 30px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(174.51% 249.77% at 104.04% -52.52%, rgba(84, 151, 252, 0.3) 20.5%, rgba(84, 151, 252, 0) 74.5%);
+        border: 1px solid #FFFFFF3A;
+        border-radius: 25px;
+
+        p {
+            color: var(--grey-text);
+        }
+    }
+
+    &__image {
+        width: 50px;
+        height: 50px;
+        background: image-set(url(../images/benefit-main-item-1.avif),
+                url(../images/benefit-main-item-1.webp),
+                url(../images/benefit-main-item-1.png),
+            ) center / contain no-repeat;
+        mix-blend-mode: Luminosity;
+    }
+}
+
+.in-numbers-about {
+    h2+p {
+        max-width: 770px;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        display: grid;
+        gap: 30px;
+        width: 100%;
+        padding: 65px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 255, 148, 0.1) 20.5%, rgba(0, 255, 148, 0) 74.5%);
+        border: 1px solid #04758699;
+        border-radius: 16px;
+
+        p {
+            color: #E8E8E8;
+        }
+    }
+
+    &__title {
+        font-family: 'Unbounded', sans-serif;
+        font-size: 96px;
+        font-weight: 600;
+        line-height: 100%;
+        color: var(--grey-text)
+    }
+}
+
+.awars-about {
+    h2+p {
+        max-width: 610px;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: start;
+        margin-top: 30px;
+    }
+
+    &__item {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        color: var(--white);
+        font-family: 'Unbounded', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 130%;
+        text-align: center;
+        background: image-set(
+            url(../images/awars-about-image.avif),
+            url(../images/awars-about-image.webp),
+            url(../images/awars-about-image.png)
+        ) center / contain no-repeat;
     }
 }
 
