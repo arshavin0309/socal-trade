@@ -2808,6 +2808,7 @@ section {
             font-weight: 400;
             line-height: 140%;
             color: var(--white);
+            text-decoration: none;
         }
     }
 
@@ -3244,6 +3245,29 @@ form {
     a {
         color: #7D7D7D;
     }
+}
+
+.article {
+    &__date {
+        margin-right: auto;
+        text-align: left;
+    }
+
+    h1 {
+        margin-right: auto;
+        text-align: left;
+    }
+
+    &__list {
+        width: 100%;
+        display: grid;
+        align-items: start;
+        gap: 20px;
+        grid-template-columns: 1fr 390px;
+        margin-top: 30px;
+    }
+
+    &__post {}
 }
 
 @import '../scss/hovers';
