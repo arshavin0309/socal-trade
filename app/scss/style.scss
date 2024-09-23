@@ -2985,6 +2985,30 @@ section {
     }
 }
 
+.hero-about {
+    h1 {
+        text-transform: none;
+    }
+
+    h2+p {
+        max-width: 880px;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__box {
+        padding: 30px;
+        border-radius: 25px;
+        background: #3535354D;
+        border-radius: 25px;
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 12px;
+    }
+}
+
 @import '../scss/hovers';
 @import '../scss/_1200';
 @import '../scss/_992';
