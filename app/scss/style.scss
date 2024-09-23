@@ -1696,6 +1696,33 @@ section {
             font-weight: 300;
             line-height: 130%;
         }
+
+        &:nth-child(2) {
+            position: relative;
+            background: #00FF944D;
+
+            &::before {
+                content: 'популярный';
+                position: absolute;
+                top: -12px;
+                right: 30px;
+                padding: 2px 25px;
+                background: var(--green);
+                border-radius: 10px;
+                font-family: 'Rubik', sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: -0.03em;
+                color: #000000B2;
+                text-align: center;
+            }
+        }
+
+        &:nth-child(3) {
+            li {
+                color: var(--white);
+            }
+        }
     }
 }
 
@@ -1967,10 +1994,11 @@ section {
 }
 
 .popular-indexes {
-    p {
+    h2+p {
         max-width: 680px;
         margin: auto;
         text-align: center;
+        color: var(--grey-text);
     }
 }
 
@@ -2141,6 +2169,7 @@ section {
 .popular-raw {
     h2+p {
         text-align: center;
+        color: var(--grey-text);
     }
 }
 
@@ -2159,6 +2188,7 @@ section {
 .popular-currencies {
     h2+p {
         text-align: center;
+        color: var(--grey-text);
     }
 }
 
@@ -2171,6 +2201,35 @@ section {
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
             radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(84, 151, 252, 0.3) 20.5%, rgba(84, 151, 252, 0) 74.5%);
         border-radius: 15px;
+
+        &.ui-state-active {
+            border-radius: 15px 15px 0 0;
+        }
+    }
+
+    .ui-accordion-content {
+        margin-top: -30px;
+        margin-bottom: 30px;
+        padding: 0 65px 65px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(84, 151, 252, 0.3) 20.5%, rgba(84, 151, 252, 0) 74.5%);
+        border-radius: 0 0 15px 15px;
+    }
+}
+
+.faq-currencies {
+    &__list {
+        width: 100%;
+    }
+
+    details {
+        padding: 65px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+            radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(84, 151, 252, 0.3) 20.5%, rgba(84, 151, 252, 0) 74.5%);
+        border-radius: 15px;
+
+        .h3 {
+            list-style: none;
+        }
     }
 }
 
@@ -3018,6 +3077,7 @@ section {
 
 .protection-about {
     h2+p {
+        color: var(--grey-text);
         text-align: center;
     }
 
@@ -3036,7 +3096,7 @@ section {
         gap: 30px;
         padding: 30px;
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(174.51% 249.77% at 104.04% -52.52%, rgba(84, 151, 252, 0.3) 20.5%, rgba(84, 151, 252, 0) 74.5%);
-        border: 1px solid #FFFFFF3A;
+        border: 1px solid #FFFFFF18;
         border-radius: 25px;
 
         p {
@@ -3099,6 +3159,7 @@ section {
         max-width: 610px;
         margin: auto;
         text-align: center;
+        color: var(--grey-text);
     }
 
     &__list {
@@ -3267,7 +3328,46 @@ form {
         margin-top: 30px;
     }
 
-    &__post {}
+    &__post {
+        display: grid;
+        gap: 20px;
+
+        img {
+            max-width: 100%;
+            margin: auto;
+            border-radius: 25px;
+        }
+
+        p {
+            font-family: 'Rubik', sans-serif;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 120%;
+            color: var(--grey-text);
+        }
+
+        li {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding-left: 15px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 120%;
+            color: var(--grey-text);
+            list-style: none;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: var(--green);
+            }
+        }
+    }
 }
 
 @import '../scss/hovers';

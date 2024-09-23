@@ -112,10 +112,39 @@ for (let i = 0; i < tableBtn.length; i++) {
     });
 };
 
-$(function () {
-    $(".accordion").accordion({
-        active: false,
-        collapsible: true,
-        heightStyle: "content",
+$('details summary').each(function () {
+    var $Wrapper = $(this).nextAll().wrapAll('<div></div>').parent();
+    // Hide elements that are not open by default
+    if (!$(this).parent('details').attr('open'))
+        $Wrapper.hide();
+    $(this).click(function (Event) {
+        Event.preventDefault();
+        if ($(this).parent('details').attr('open')) {
+            $Wrapper.slideUp(function () {
+                // Remove the open attribute after sliding so, so the animation is visible in browsers supporting the <details> element
+                $(this).parent('details').removeAttr('open');
+            });
+        } else {
+            // Add the open attribute before sliding down, so the animation is visible in browsers supporting the <details> element
+            $(this).parent('details').attr('open', true);
+            $Wrapper.slideDown();
+        }
     });
+
+    // закрытие всех details при открытии нового details
+    const details = document.querySelectorAll("details");
+
+    details.forEach((detail) => {
+        detail.addEventListener("toggle", () => {
+            if (detail.open) setTargetDetail(detail);
+        });
+    });
+
+    function setTargetDetail(targetDetail) {
+        details.forEach((detail) => {
+            if (detail !== targetDetail) {
+                detail.open = false;
+            }
+        });
+    }
 });
