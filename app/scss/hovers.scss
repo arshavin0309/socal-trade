@@ -184,4 +184,19 @@
             }
         }
     }
+
+    .main-news {
+        a {
+            h3 {
+                transition: var(--transition);
+            }
+
+            &:hover {
+                h3 {
+
+                    color: var(--green);
+                }
+            }
+        }
+    }
 }
