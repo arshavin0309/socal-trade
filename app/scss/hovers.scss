@@ -199,4 +199,15 @@
             }
         }
     }
+
+    .pagination {
+        a {
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--black);
+                background: var(--green);
+            }
+        }
+    }
 }
