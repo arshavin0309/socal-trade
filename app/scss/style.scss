@@ -204,10 +204,6 @@ section {
         gap: 30px;
         align-items: center;
     }
-
-    &.error-hero {
-        margin-top: 210px;
-    }
 }
 
 .header {
@@ -1164,7 +1160,6 @@ section {
 }
 
 .error-hero {
-
     h1 {
         display: flex;
         align-items: center;
@@ -1172,6 +1167,10 @@ section {
         width: 400px;
         height: 400px;
         background: url(../images/error-bg.svg) center / contain no-repeat;
+    }
+
+    p {
+        text-align: center;
     }
 }
 
