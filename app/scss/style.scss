@@ -2629,6 +2629,7 @@ section {
     }
 
     &__list {
+        width: 100%;
         display: grid;
         gap: 30px;
     }
@@ -2690,6 +2691,10 @@ section {
         display: grid;
         gap: 30px;
         max-width: 605px;
+    }
+
+    .btn {
+        margin-top: 30px;
     }
 }
 
