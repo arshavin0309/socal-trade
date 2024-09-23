@@ -201,11 +201,13 @@
     }
 
     .aside-news {
-        a {
-            transition: var(--transition);
+        &__item {
+            a {
+                transition: var(--transition);
 
-            &:hover {
-                color: var(--green);
+                &:hover {
+                    color: var(--green);
+                }
             }
         }
     }
