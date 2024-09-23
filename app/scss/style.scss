@@ -2761,6 +2761,72 @@ section {
     }
 }
 
+.aside-news {
+    &__banner {
+        display: grid;
+        gap: 30px;
+        margin-bottom: 20px;
+        padding: 30px;
+        border-radius: 25px;
+        background: linear-gradient(179.42deg, rgba(18, 206, 117, 0) 25.07%, rgba(18, 206, 117, 0.225) 77.51%);
+        border: 1px solid #FFFFFF3A;
+    }
+
+    &__preview {
+        width: 100%;
+        height: 355px;
+        border-radius: 8px;
+        background: image-set(url(../images/main-news-preview.avif),
+                url(../images/main-news-preview.webp),
+                url(../images/main-news-preview/png)) center / cover no-repeat;
+    }
+
+    &__image {
+        width: 125px;
+        height: 125px;
+        border-radius: 8px;
+        object-fit: cover;
+        flex: 0 0 auto;
+    }
+
+    &__list {
+        padding: 30px;
+        background: #FFFFFF1A;
+        border-radius: 25px;
+        border: 1px solid #FFFFFF3A;
+    }
+
+    &__item {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--green);
+
+        a {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            color: var(--white);
+        }
+    }
+
+    &__box {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__date {
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: -0.03em;
+        color: var(--grey-text)
+    }
+}
+
 .pagination {
     display: flex;
     gap: 16px;
@@ -2798,7 +2864,62 @@ section {
     }
 }
 
-.aside-news {
+.hero-forecasts {
+    h1 {
+        text-transform: none;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.main-forecasts {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 390px;
+        gap: 20px;
+        align-items: start;
+    }
+
+    &__list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+        display: grid;
+        gap: 15px;
+        height: 270px;
+        padding: 30px;
+        background: #FFFFFF1A;
+        border-radius: 25px;
+        border: 1px solid #FFFFFF3A;
+    }
+
+    a {
+        text-decoration: none;
+
+        h3 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+        }
+    }
+
+    &__date {
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: -0.03em;
+        color: var(--white)
+    }
+}
+
+.aside-forecasts {
     &__banner {
         display: grid;
         gap: 30px;

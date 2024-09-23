@@ -222,4 +222,31 @@
             }
         }
     }
+
+    .main-forecasts {
+        a {
+            h3 {
+                transition: var(--transition);
+            }
+
+            &:hover {
+                h3 {
+
+                    color: var(--green);
+                }
+            }
+        }
+    }
+
+    .aside-forecasts {
+        &__item {
+            a {
+                transition: var(--transition);
+
+                &:hover {
+                    color: var(--green);
+                }
+            }
+        }
+    }
 }
