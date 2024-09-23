@@ -200,6 +200,16 @@
         }
     }
 
+    .aside-news {
+        a {
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--green);
+            }
+        }
+    }
+
     .pagination {
         a {
             transition: var(--transition);
