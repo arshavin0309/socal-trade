@@ -119,9 +119,11 @@ $('details summary').each(function () {
         $Wrapper.hide();
     $(this).click(function (Event) {
         Event.preventDefault();
+
         if ($(this).parent('details').attr('open')) {
             $Wrapper.slideUp(function () {
                 // Remove the open attribute after sliding so, so the animation is visible in browsers supporting the <details> element
+
                 $(this).parent('details').removeAttr('open');
             });
         } else {
@@ -130,21 +132,4 @@ $('details summary').each(function () {
             $Wrapper.slideDown();
         }
     });
-
-    // закрытие всех details при открытии нового details
-    const details = document.querySelectorAll("details");
-
-    details.forEach((detail) => {
-        detail.addEventListener("toggle", () => {
-            if (detail.open) setTargetDetail(detail);
-        });
-    });
-
-    function setTargetDetail(targetDetail) {
-        details.forEach((detail) => {
-            if (detail !== targetDetail) {
-                detail.open = false;
-            }
-        });
-    }
 });
