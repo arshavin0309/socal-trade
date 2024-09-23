@@ -249,4 +249,26 @@
             }
         }
     }
+
+    .content-contacts {
+        &__box {
+            a {
+                transition: var(--transition);
+
+                &:hover {
+                    color: var(--green);
+                }
+            }
+        }
+    }
+
+    .form-info {
+        a {
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--green);
+            }
+        }
+    }
 }

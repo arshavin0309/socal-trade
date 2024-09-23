@@ -1,11 +1,76 @@
 <!--=include header.html -->
 
 <main>
-    <section>
+    <section class="hero-contacts">
         <div class="container">
-            
+            <h1 class="text1">Контакты</h1>
+            <h2>на связи с вами</h2>
+            <p class="text1">Наши специалисты к вашим услугам в 20+ странах по всему миру</p>
+
+            <div class="hero-contacts__box">
+                <picture class="hero-contacts__image">
+                    <source srcset="../images/hero-contacts-image.avif">
+                    <source srcset="../images/hero-contacts-image.webp">
+                    <img src="../images/hero-contacts-image.png" alt="картинка контакты">
+                </picture>
+            </div>
         </div>
     </section>
+
+    <section class="content-contacts">
+        <div class="container">
+            <p class="text1">Наши контакты</p>
+            <h2>Возникли вопросы? Свяжитесь удобным для вас способом</h2>
+
+            <div class="content-contacts__list">
+                <div class="content-contacts__item">
+                    <div class="content-contacts__box">
+                        <p class="text1">Телефон:</p>
+                        <no-typography>
+                            <a class="text1" href="tel:+7 (596) 544-87-33">+7 (596) 544-87-33</a>
+                        </no-typography>
+                    </div>
+
+                    <div class="content-contacts__box">
+                        <p class="text1">E-mail:</p>
+                        <a class="text1" href="mailto:info@socal-trade.com ">info@socal-trade.com </a>
+                    </div>
+
+                    <div class="content-contacts__box">
+                        <p class="text1">Адрес:</p>
+                        <address class="text1">Charlottenstraße 35, 10117 Berlin</address>
+                    </div>
+
+                    <div class="content-contacts__box">
+                        <p class="text1">Чат поддержки:</p>
+                        <div class="text1">24/5 (общие вопросы)</div>
+                    </div>
+
+                    <p class="text2 content-contacts__info">Обработка запросов по электронной почте и тикетов (обращения от новых клиентов, обработка платежей, трейдинг-деск, тех. поддержка) — c 7 до 16 (GMT+3) в рабочие дни.</p>
+                </div>
+
+                <form action="">
+                    <p>
+                        <input type="text" placeholder="Имя">
+                    </p>
+                    <p>
+                        <input type="email" placeholder="Email">
+                    </p>
+                    <p>
+                        <input type="text" placeholder="Сообщение">
+                    </p>
+                    
+                    <p class="text2 form-info">Нажимая на кнопку отправить, вы соглашаетесь с <a href="##" target="_blank">политикой конфиденциальности</a></p>
+                    
+                    <p>
+                        <input class="btn" type="submit" value="Отправить">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--=include banner-2.html -->
 </main>
 
 <!--=include footer.html -->

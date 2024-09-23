@@ -3132,11 +3132,118 @@ section {
         font-weight: 500;
         line-height: 130%;
         text-align: center;
-        background: image-set(
-            url(../images/awars-about-image.avif),
-            url(../images/awars-about-image.webp),
-            url(../images/awars-about-image.png)
-        ) center / contain no-repeat;
+        background: image-set(url(../images/awars-about-image.avif),
+                url(../images/awars-about-image.webp),
+                url(../images/awars-about-image.png)) center / contain no-repeat;
+    }
+}
+
+.hero-contacts {
+    h1 {
+        text-transform: none;
+    }
+
+    &__box {
+        padding: 30px;
+        border-radius: 25px;
+        background: #3535354D;
+        border-radius: 25px;
+        border: 1px solid #5E5E5E4D
+    }
+
+    &__image {
+        border-radius: 12px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.content-contacts {
+    .container {
+        &>p {
+            margin-right: auto;
+            text-align: left;
+        }
+    }
+
+    h2 {
+        max-width: 970px;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    &__list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 500px 520px;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: grid;
+        gap: 25px;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: 170px 1fr;
+        gap: 40px;
+        align-items: center;
+
+        a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        address {
+            color: var(--white);
+            font-style: initial;
+        }
+
+        div {
+            color: var(--white);
+        }
+    }
+
+    &__info {
+        color: #7D7D7D;
+    }
+}
+
+form {
+    display: grid;
+    gap: 15px;
+
+    input {
+        width: 100%;
+        padding: 13px 32px;
+        color: var(--white);
+        background: transparent;
+        border: 1px solid var(--green);
+        border-radius: 12px;
+
+        &::placeholder {
+            color: var(--white);
+        }
+
+        &[type="submit"] {
+            width: auto;
+            margin-top: 15px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.form-info {
+    max-width: 360px;
+    color: #7D7D7D;
+
+    a {
+        color: #7D7D7D;
     }
 }
 
