@@ -112,24 +112,18 @@ for (let i = 0; i < tableBtn.length; i++) {
     });
 };
 
-$('details summary').each(function () {
-    var $Wrapper = $(this).nextAll().wrapAll('<div></div>').parent();
-    // Hide elements that are not open by default
-    if (!$(this).parent('details').attr('open'))
-        $Wrapper.hide();
-    $(this).click(function (Event) {
-        Event.preventDefault();
+$(document).ready(function () {
+    $('.faq-currencies__list > li > .answer').hide();
 
-        if ($(this).parent('details').attr('open')) {
-            $Wrapper.slideUp(function () {
-                // Remove the open attribute after sliding so, so the animation is visible in browsers supporting the <details> element
-
-                $(this).parent('details').removeAttr('open');
-            });
+    $('.faq-currencies__list > li').click(function () {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active").find(".answer").slideUp();
         } else {
-            // Add the open attribute before sliding down, so the animation is visible in browsers supporting the <details> element
-            $(this).parent('details').attr('open', true);
-            $Wrapper.slideDown();
+            $(".faq-currencies__list > li.active .answer").slideUp();
+            $(".faq-currencies__list > li.active").removeClass("active");
+            $(this).addClass("active").find(".answer").slideDown();
         }
+        return false;
     });
+
 });
