@@ -31,8 +31,18 @@
             align-items: center;
 
             picture {
+                height: 160px;
                 grid-row: 1/2;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
             }
+        }
+
+        &__box {
+            gap: 15px;
         }
     }
 
