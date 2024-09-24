@@ -14,4 +14,15 @@
             text-align: center;
         }
     }
+
+    .footer {
+        .menu {
+            grid-template-columns: 1fr;
+            gap: 60px;
+        }
+
+        &__nav {
+            gap: 60px;
+        }
+    }
 }

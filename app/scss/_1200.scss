@@ -1,0 +1,15 @@
+@media (max-width: 1200px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+
+        &__burger {
+            display: flex;
+        }
+
+        &__logo {
+            width: 200px;
+        }
+    }
+}

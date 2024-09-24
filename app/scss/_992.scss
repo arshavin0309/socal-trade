@@ -10,4 +10,21 @@
             padding: 40px 40px 0;
         }
     }
+
+    .invest-main {
+        &__item {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    .footer {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        &__copyright {
+            grid-column: initial;
+        }
+    }
 }

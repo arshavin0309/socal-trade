@@ -19,6 +19,11 @@
         font-size: 30px;
     }
 
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .successes {
         &__progress {
             justify-content: start;
@@ -27,6 +32,12 @@
         &__el {
             width: 105px;
             height: 105px;
+        }
+    }
+
+    .footer {
+        .menu {
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
