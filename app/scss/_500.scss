@@ -1,3 +1,17 @@
 @media (max-width: 500px) {
-    
+    .start-main {
+        &__item {
+            grid-template-columns: 1fr;
+            gap: 15px;
+
+            p {
+                text-align: center;
+            }
+        }
+
+        &__box {
+            justify-items: center;
+            text-align: center;
+        }
+    }
 }

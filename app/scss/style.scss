@@ -239,8 +239,10 @@ section {
     &__logo {
         display: block;
         max-width: 310px;
+        min-width: 200px;
         width: 100%;
         height: 40px;
+        flex: 0 0 auto;
         background: url(../images/header-logo.svg) center / contain no-repeat;
     }
 
@@ -618,6 +620,11 @@ section {
         }
     }
 
+    &__box {
+        display: grid;
+        gap: 30px;
+    }
+
     h3 {
         text-transform: uppercase;
     }
@@ -799,6 +806,11 @@ section {
         }
     }
 
+    &__box {
+        display: grid;
+        gap: 15px;
+    }
+
     h3 {
         text-align: center;
     }
@@ -907,6 +919,7 @@ section {
         border-radius: 25px;
         background: url(../images/banner-1.avif) left bottom / cover no-repeat;
         padding: 40px 190px 0;
+        overflow: hidden;
     }
 
     &__content {
@@ -943,6 +956,7 @@ section {
         border-radius: 25px;
         background: url(../images/banner-1.avif) left bottom / cover no-repeat;
         padding: 40px 130px 0;
+        overflow: hidden;
     }
 
     &__content {
@@ -980,6 +994,7 @@ section {
         border-radius: 25px;
         background: url(../images/banner-1.avif) left bottom / cover no-repeat;
         padding: 40px 220px 0;
+        overflow: hidden;
     }
 
     &__content {
@@ -3453,7 +3468,8 @@ form {
 }
 
 @import '../scss/hovers';
-@import '../scss/_1200';
+@import '../scss/_1400';
+@import '../scss/_1300';
 @import '../scss/_992';
 @import '../scss/_768';
 @import '../scss/_500';

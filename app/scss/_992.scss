@@ -1,3 +1,13 @@
 @media (max-width: 992px) {
+    .successes {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
     
+    .banner-1 {
+        &__box {
+            padding: 40px 40px 0;
+        }
+    }
 }
