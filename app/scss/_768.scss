@@ -63,35 +63,22 @@
         }
     }
 
-    .btn {
-        padding: 20px 50px;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 130%;
-        letter-spacing: -0.03em;
-
-        &-transparent {
-            padding: 20px 50px;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 130%;
-            letter-spacing: -0.03em;
+    .analytics-main {
+        .widget-box {
+            margin: 0;
         }
 
-        &-white {
-            padding: 20px 50px;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 130%;
-            letter-spacing: -0.03em;
+        h2 {
+            text-align: center;
         }
 
-        &-black {
-            padding: 20px 50px;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 130%;
-            letter-spacing: -0.03em;
+        p {
+            margin: auto;
+            text-align: center;
+        }
+
+        &__box {
+            flex-direction: column;
         }
     }
 }

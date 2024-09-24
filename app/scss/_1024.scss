@@ -21,4 +21,40 @@
         margin-top: 150px;
         margin-bottom: 150px;
     }
+
+    .btn {
+        padding: 20px 50px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: -0.03em;
+        white-space: nowrap;
+
+        &-transparent {
+            padding: 20px 50px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 130%;
+            letter-spacing: -0.03em;
+            white-space: nowrap;
+        }
+
+        &-white {
+            padding: 20px 50px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 130%;
+            letter-spacing: -0.03em;
+            white-space: nowrap;
+        }
+
+        &-black {
+            padding: 20px 50px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 130%;
+            letter-spacing: -0.03em;
+            white-space: nowrap;
+        }
+    }
 }
