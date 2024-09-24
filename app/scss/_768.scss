@@ -2,7 +2,10 @@
 
     h1,
     .h1 {
-        font-size: 30px;
+        max-width: 610px;
+        margin: auto;
+        text-align: center;
+        font-size: 40px;
     }
 
     h2,
@@ -48,6 +51,47 @@
     .invest-main {
         &__list {
             display: none;
+        }
+
+        .swiper {
+            display: block;
+
+            &-button-prev,
+            &-button-next {
+                color: #FFFFFF33;
+            }
+        }
+    }
+
+    .btn {
+        padding: 20px 50px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: -0.03em;
+
+        &-transparent {
+            padding: 20px 50px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 130%;
+            letter-spacing: -0.03em;
+        }
+
+        &-white {
+            padding: 20px 50px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 130%;
+            letter-spacing: -0.03em;
+        }
+
+        &-black {
+            padding: 20px 50px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 130%;
+            letter-spacing: -0.03em;
         }
     }
 }

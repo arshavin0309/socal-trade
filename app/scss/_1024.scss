@@ -7,9 +7,18 @@
     }
 
     .choice-main {
+        &__list {
+            gap: 60px;
+        }
+
         &__number {
             width: 200px;
             height: 200px;
         }
+    }
+
+    section {
+        margin-top: 150px;
+        margin-bottom: 150px;
     }
 }

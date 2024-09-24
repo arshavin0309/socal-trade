@@ -3490,6 +3490,11 @@ form {
     }
 }
 
+.swiper {
+    display: none;
+    width: 100%;
+}
+
 @import '../scss/hovers';
 @import '../scss/_1400';
 @import '../scss/_1300';
@@ -3499,3 +3504,4 @@ form {
 @import '../scss/_900';
 @import '../scss/_768';
 @import '../scss/_500';
+@import '../scss/_360';
