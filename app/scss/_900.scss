@@ -1,0 +1,41 @@
+@media (max-width: 900px) {
+    .choice-main {
+        &__item {
+            flex-direction: column;
+
+            &:nth-child(1) {
+                .choice-main__number {
+                    margin-right: auto;
+                }
+
+                .choice-main__box {
+                    margin-right: auto;
+                }
+            }
+
+            &:nth-child(2) {
+                .choice-main__number {
+                    margin-left: auto;
+                    text-align: right;
+                }
+
+                .choice-main__box {
+                    max-width: 550px;
+                    margin: 0;
+                    margin-left: auto;
+                    text-align: right;
+                }
+            }
+
+            &:nth-child(3) {
+                .choice-main__number {
+                    margin-right: auto;
+                }
+
+                .choice-main__box {
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}

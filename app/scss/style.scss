@@ -910,8 +910,8 @@ section {
         .choice-main__rotate {
             z-index: -1;
             position: absolute;
-            width: 350px;
-            height: 350px;
+            width: inherit;
+            height: inherit;
         }
     }
 
@@ -3496,5 +3496,6 @@ form {
 @import '../scss/_1200';
 @import '../scss/_1024';
 @import '../scss/_992';
+@import '../scss/_900';
 @import '../scss/_768';
 @import '../scss/_500';
