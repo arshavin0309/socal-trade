@@ -271,4 +271,16 @@
             }
         }
     }
+
+    .faq-currencies {
+        &__list {
+            li {
+                transition: var(--transition);
+
+                &:hover {
+                    outline: 1px solid var(--pale-blue);
+                }
+            }
+        }
+    }
 }
