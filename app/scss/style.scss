@@ -616,12 +616,12 @@ section {
         height: 330px;
         border-radius: 12px;
         background: radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 87, 255, 0.1) 20.5%, rgba(0, 87, 255, 0) 74.5%);
+        mix-blend-mode: Luminosity;
 
         img {
             width: 200px;
             height: 200px;
             object-fit: contain;
-            mix-blend-mode: Luminosity;
         }
     }
 

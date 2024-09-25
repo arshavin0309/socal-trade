@@ -143,3 +143,12 @@ var swiper = new Swiper(".swiper1", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+let headerBurger = document.querySelector('.header__burger');
+let headerNav = document.querySelector('.header__nav');
+let headerContainer = document.querySelector('.header .container');
+
+headerBurger.addEventListener('click', () => {
+    headerNav.classList.toggle('active');
+    headerContainer.classList.toggle('active');
+});
