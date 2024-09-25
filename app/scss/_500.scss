@@ -10,8 +10,9 @@
             &>.menu-item {
                 width: 100%;
 
-                a {
+                &>a {
                     width: 100%;
+                    justify-content: space-between;
                 }
             }
         }

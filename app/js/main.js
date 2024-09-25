@@ -147,8 +147,25 @@ var swiper = new Swiper(".swiper1", {
 let headerBurger = document.querySelector('.header__burger');
 let headerNav = document.querySelector('.header__nav');
 let headerContainer = document.querySelector('.header .container');
+let headerMenuItem = document.querySelectorAll('.header .menu > .menu-item');
 
 headerBurger.addEventListener('click', () => {
     headerNav.classList.toggle('active');
     headerContainer.classList.toggle('active');
+
+    for (let n = 0; n < headerMenuItem.length; n++) {
+        headerMenuItem[n].classList.remove('active');
+    };
 });
+
+for (let i = 0; i < headerMenuItem.length; i++) {
+    headerMenuItem[i].addEventListener('click', () => {
+        for (let n = 0; n < headerMenuItem.length; n++) {
+            if (headerMenuItem[n] !== headerMenuItem[i]) {
+                headerMenuItem[n].classList.remove('active');
+            }
+        };
+
+        headerMenuItem[i].classList.toggle('active');
+    });
+};

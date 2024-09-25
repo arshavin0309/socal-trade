@@ -280,17 +280,19 @@ section {
         }
 
         &>.menu-item {
-            display: flex;
-            gap: 5px;
-            align-items: center;
-
             &:not(:first-child) {
-                &::after {
-                    content: '';
-                    display: block;
-                    width: 20px;
-                    height: 8px;
-                    background: url(../images/header-arrow.svg) center / contain no-repeat;
+                &>a {
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 20px;
+                        height: 8px;
+                        background: url(../images/header-arrow.svg) center / contain no-repeat;
+                    }
                 }
             }
         }
@@ -616,7 +618,6 @@ section {
         height: 330px;
         border-radius: 12px;
         background: radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 87, 255, 0.1) 20.5%, rgba(0, 87, 255, 0) 74.5%);
-        mix-blend-mode: Luminosity;
 
         img {
             width: 200px;
@@ -2383,7 +2384,6 @@ section {
 
             .how-cryptocurrencies__image {
                 background: image-set(url(../images/basics-training-image-1.avif), url(../images/basics-training-image-1.webp), url(../images/basics-training-image-1.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
             }
         }
 
@@ -2393,7 +2393,6 @@ section {
 
             .how-cryptocurrencies__image {
                 background: image-set(url(../images/basics-training-image-2.avif), url(../images/basics-training-image-2.webp), url(../images/basics-training-image-2.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
             }
         }
 
@@ -2402,7 +2401,6 @@ section {
 
             .how-cryptocurrencies__image {
                 background: image-set(url(../images/basics-training-image-3.avif), url(../images/basics-training-image-3.webp), url(../images/basics-training-image-3.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
             }
         }
 
@@ -2411,9 +2409,7 @@ section {
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 255, 148, 0.2) 20.5%, rgba(0, 255, 148, 0) 74.5%);
 
             .how-cryptocurrencies__image {
-                background: image-set(url(../images/basics-training-image-1.avif), url(../images/basics-training-image-1.webp), url(../images/basics-training-image-1.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
-                transform: scale(-1, 1);
+                background: image-set(url(../images/basics-training-image-4.avif), url(../images/basics-training-image-4.webp), url(../images/basics-training-image-4.png)) center / contain no-repeat;
             }
         }
 
@@ -2421,9 +2417,7 @@ section {
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 87, 255, 0.1) 20.5%, rgba(0, 87, 255, 0) 74.5%);
 
             .how-cryptocurrencies__image {
-                background: image-set(url(../images/basics-training-image-2.avif), url(../images/basics-training-image-2.webp), url(../images/basics-training-image-2.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
-                transform: scale(-1, 1);
+                background: image-set(url(../images/basics-training-image-5.avif), url(../images/basics-training-image-5.webp), url(../images/basics-training-image-5.png)) center / contain no-repeat;
             }
         }
 
@@ -2432,8 +2426,7 @@ section {
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 87, 255, 0.3) 20.5%, rgba(0, 87, 255, 0) 74.5%);
 
             .how-cryptocurrencies__image {
-                background: image-set(url(../images/basics-training-image-3.avif), url(../images/basics-training-image-3.webp), url(../images/basics-training-image-3.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
+                background: image-set(url(../images/basics-training-image-7.avif), url(../images/basics-training-image-7.webp), url(../images/basics-training-image-7.png)) center / contain no-repeat;
             }
         }
     }
@@ -2711,7 +2704,6 @@ section {
 
             .how-quotes__image {
                 background: image-set(url(../images/basics-training-image-1.avif), url(../images/basics-training-image-1.webp), url(../images/basics-training-image-1.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
             }
         }
 
@@ -2721,7 +2713,6 @@ section {
 
             .how-quotes__image {
                 background: image-set(url(../images/basics-training-image-2.avif), url(../images/basics-training-image-2.webp), url(../images/basics-training-image-2.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
             }
         }
 
@@ -2730,7 +2721,6 @@ section {
 
             .how-quotes__image {
                 background: image-set(url(../images/basics-training-image-3.avif), url(../images/basics-training-image-3.webp), url(../images/basics-training-image-3.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
             }
         }
 
@@ -2739,8 +2729,7 @@ section {
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 255, 148, 0.2) 20.5%, rgba(0, 255, 148, 0) 74.5%);
 
             .how-quotes__image {
-                background: image-set(url(../images/basics-training-image-2.avif), url(../images/basics-training-image-2.webp), url(../images/basics-training-image-2.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
+                background: image-set(url(../images/basics-training-image-4.avif), url(../images/basics-training-image-4.webp), url(../images/basics-training-image-4.png)) center / contain no-repeat;
             }
         }
 
@@ -2749,7 +2738,6 @@ section {
 
             .how-quotes__image {
                 background: image-set(url(../images/basics-training-image-3.avif), url(../images/basics-training-image-3.webp), url(../images/basics-training-image-3.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
             }
         }
 
@@ -2758,8 +2746,7 @@ section {
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(0, 87, 255, 0.3) 20.5%, rgba(0, 87, 255, 0) 74.5%);
 
             .how-quotes__image {
-                background: image-set(url(../images/basics-training-image-1.avif), url(../images/basics-training-image-1.webp), url(../images/basics-training-image-1.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
+                background: image-set(url(../images/basics-training-image-6.avif), url(../images/basics-training-image-6.webp), url(../images/basics-training-image-6.png)) center / contain no-repeat;
             }
         }
     }
@@ -2817,7 +2804,6 @@ section {
         &:nth-child(1) {
             .find-calendar__image {
                 background: image-set(url(../images/basics-training-image-1.avif), url(../images/basics-training-image-1.webp), url(../images/basics-training-image-1.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
             }
         }
 
@@ -2827,7 +2813,6 @@ section {
 
             .find-calendar__image {
                 background: image-set(url(../images/basics-training-image-2.avif), url(../images/basics-training-image-2.webp), url(../images/basics-training-image-2.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
             }
 
             p {
@@ -2842,7 +2827,6 @@ section {
 
             .find-calendar__image {
                 background: image-set(url(../images/basics-training-image-3.avif), url(../images/basics-training-image-3.webp), url(../images/basics-training-image-3.png)) center / contain no-repeat;
-                mix-blend-mode: luminosity;
             }
         }
     }
@@ -3224,7 +3208,6 @@ section {
                 url(../images/benefit-main-item-1.webp),
                 url(../images/benefit-main-item-1.png),
             ) center / contain no-repeat;
-        mix-blend-mode: Luminosity;
     }
 }
 
