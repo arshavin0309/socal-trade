@@ -108,7 +108,8 @@
     }
 
     .widget-box {
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .start-main {
@@ -118,6 +119,18 @@
 
         &__list {
             gap: 15px;
+            margin-bottom: 0;
+        }
+    }
+
+    .hero-platform {
+        h2 {
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+
+        .widget-box {
+            margin-top: 0;
             margin-bottom: 0;
         }
     }
@@ -202,6 +215,24 @@
                     top: -7px;
                 }
             }
+        }
+    }
+
+    .assets-conditions {
+        &__box {
+            margin-top: 0;
+        }
+    }
+
+    .hero-conditions {
+        h1 {
+            margin-bottom: -15px;
+        }
+    }
+    
+    .choice-platform {
+        &__list {
+            margin-top: 0;
         }
     }
 }

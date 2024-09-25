@@ -4,7 +4,7 @@
             grid-template-columns: 1fr;
         }
     }
-    
+
     .banner-1 {
         &__box {
             padding: 40px 40px 0;
@@ -29,6 +29,12 @@
     }
 
     .types-conditions {
+        .container {
+            &::before {
+                display: none;
+            }
+        }
+
         &__list {
             width: 100%;
             grid-template-columns: 1fr;
@@ -41,6 +47,54 @@
                 grid-column: initial;
                 grid-row: initial;
             }
+        }
+    }
+
+    .assets-conditions {
+        .container {
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .choice-platform {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            grid-template-columns: 1fr 1fr;
+
+            &--1 {
+                .choice-platform__image {
+                    &::after {
+                        top: 20px;
+                        left: 20px;
+                        right: 20px;
+                        bottom: 20px;
+                    }
+                }
+            }
+
+            &--2 {
+                .choice-platform__image {
+                    &::after {
+                        top: 20px;
+                        left: 20px;
+                        right: 20px;
+                        bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            padding: 20px;
+        }
+
+        &__image {
+            height: 100%;
         }
     }
 }
