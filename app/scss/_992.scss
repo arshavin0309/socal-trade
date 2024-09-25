@@ -27,4 +27,18 @@
             grid-column: initial;
         }
     }
+
+    .types-conditions {
+        &__list {
+            width: 100%;
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            &:nth-child(3) {
+                grid-column: initial;
+                grid-row: initial;
+            }
+        }
+    }
 }

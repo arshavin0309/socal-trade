@@ -1797,6 +1797,7 @@ section {
     &__header {
         display: flex;
         width: 100%;
+        overflow-x: auto;
     }
 
     &__btn {
@@ -3477,6 +3478,10 @@ form {
 .swiper {
     display: none;
     width: 100%;
+}
+
+.table-overflow {
+    overflow-x: auto;
 }
 
 @import '../scss/hovers';

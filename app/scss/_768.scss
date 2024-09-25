@@ -182,4 +182,26 @@
             padding-top: 150px;
         }
     }
+
+    .types-conditions {
+        &__list {
+            gap: 15px;
+        }
+
+        &__item {
+            h3 {
+                font-size: 20px;
+            }
+
+            li {
+                font-size: 16px;
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    top: -7px;
+                }
+            }
+        }
+    }
 }
