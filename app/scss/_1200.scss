@@ -81,4 +81,12 @@
             grid-template-columns: 1fr 1fr;
         }
     }
+
+    .content-contacts {
+        &__list {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 60px;
+        }
+    }
 }
