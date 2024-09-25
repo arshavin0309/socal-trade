@@ -75,4 +75,10 @@
             margin-top: 50px;
         }
     }
+
+    .documents-doc {
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }

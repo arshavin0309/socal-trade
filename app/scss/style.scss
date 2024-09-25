@@ -1215,7 +1215,9 @@ section {
 }
 
 .documents-doc {
+
     &__list {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -1245,6 +1247,12 @@ section {
             height: 50px;
             background: url(../images/doc-icon.svg) center / contain no-repeat;
         }
+    }
+}
+
+.hero-doc {
+    p {
+        text-align: center;
     }
 }
 

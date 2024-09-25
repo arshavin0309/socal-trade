@@ -1,5 +1,7 @@
 @media (max-width: 359px) {
-    h1,.h1 {
+
+    h1,
+    .h1 {
         font-size: 26px;
     }
 
@@ -13,6 +15,12 @@
             width: calc(100% + 40px);
             margin-left: -20px;
             margin-right: -20px;
+        }
+    }
+
+    .documents-doc {
+        h3 {
+            font-size: 13px;
         }
     }
 }
