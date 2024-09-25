@@ -1,4 +1,13 @@
 @media (max-width: 360px) {
+    h1,.h1 {
+        font-size: 26px;
+    }
+
+    h2,
+    .h2 {
+        font-size: 26px;
+    }
+
     .widget-box {
         &__content {
             width: calc(100% + 40px);
