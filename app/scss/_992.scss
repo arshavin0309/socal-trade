@@ -32,6 +32,8 @@
         &__list {
             width: 100%;
             grid-template-columns: 1fr;
+            margin-top: 0;
+            margin-bottom: 0;
         }
 
         &__item {
