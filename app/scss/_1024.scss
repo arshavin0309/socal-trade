@@ -57,4 +57,16 @@
             white-space: nowrap;
         }
     }
+
+    .footer {
+        margin-top: 150px;
+
+        &__box {
+            max-width: 225px;
+        }
+
+        .btn-transparent {
+            padding: 10px 35px;
+        }
+    }
 }
