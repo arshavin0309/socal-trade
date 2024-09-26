@@ -192,24 +192,13 @@
     section {
         &:first-child {
             margin-top: 80px;
-            padding-top: 150px;
-        }
-
-        &.hero-doc {
-            padding-top: 60px;
-            margin-bottom: 60px;
-        }
-
-        &.documents-doc {
-            margin-top: 60px;
-        }
-
-        &.hero-contacts {
             padding-top: 60px;
         }
+    }
 
-        &.hero-about {
-            padding-top: 60px;
+    .hero-main {
+        .container {
+            padding-top: 90px;
         }
     }
 
