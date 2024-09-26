@@ -257,8 +257,44 @@
         }
     }
 
+    .article {
+        &__date {
+            margin-bottom: 0;
+        }
+
+        &__list {
+            margin-top: 0;
+        }
+
+        &__post {
+            img {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .main-forecasts {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .aside-forecasts {
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        &__banner {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__preview {
+            height: 100%;
+        }
+    }
+
     .pagination {
         li {
+
             &:nth-child(3),
             &:nth-child(4),
             &:nth-child(5) {

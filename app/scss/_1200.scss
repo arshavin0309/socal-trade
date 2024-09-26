@@ -105,6 +105,20 @@
         .container {
             grid-template-columns: 1fr;
         }
+
+        &__item {
+            height: auto;
+        }
+    }
+
+    .main-forecasts {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            height: auto;
+        }
     }
 
     .aside-news {
@@ -116,6 +130,28 @@
         &__banner {
             align-items: start;
             margin-bottom: 0;
+        }
+    }
+
+    .aside-forecasts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 150px;
+
+        &__banner {
+            align-items: start;
+            margin-bottom: 0;
+        }
+    }
+
+    .article {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__aside {
+            margin-top: 150px;
         }
     }
 }

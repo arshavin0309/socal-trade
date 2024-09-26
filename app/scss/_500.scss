@@ -176,6 +176,30 @@
         }
     }
 
+    .aside-news {
+        &__banner {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        &__list {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+    }
+
+    .aside-forecasts {
+        &__banner {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        &__list {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+    }
+
     .hero-about {
         &__box {
             padding: 0;
