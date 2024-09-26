@@ -61,6 +61,15 @@
         }
     }
 
+    .aside-news {
+        &__banner {
+            grid-template-columns: 1fr;
+        }
+
+        &__preview {
+            height: 240px;
+        }
+    }
 
     .awars-about {
         &__list {
