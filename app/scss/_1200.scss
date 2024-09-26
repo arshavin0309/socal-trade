@@ -154,4 +154,19 @@
             margin-top: 150px;
         }
     }
+
+    .conditions-platform {
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__item {
+            width: 100%;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
 }
