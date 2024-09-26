@@ -160,6 +160,22 @@ var swiper = new Swiper(".swiper2", {
     },
 });
 
+var swiper = new Swiper(".swiper3", {
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 let headerBurger = document.querySelector('.header__burger');
 let headerNav = document.querySelector('.header__nav');
 let headerContainer = document.querySelector('.header .container');
