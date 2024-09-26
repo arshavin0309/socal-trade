@@ -5,6 +5,16 @@
     }
 
     .basics-training {
+        .container {
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+
         &__list {
             &::before {
                 display: none;

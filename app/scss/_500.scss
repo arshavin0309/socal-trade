@@ -242,4 +242,15 @@
             }
         }
     }
+
+    .basics-training {
+        h2 {
+            width: 100%;
+            text-align: left;
+
+            &+p {
+                text-align: left;
+            }
+        }
+    }
 }

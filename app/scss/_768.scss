@@ -498,12 +498,29 @@
     }
 
     .basics-training {
+        h2 {
+            margin-bottom: -15px;
+        }
+
+        &__list {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
         &__item {
             padding: 30px;
         }
 
         h3 {
             font-size: 20px;
+        }
+    }
+
+    .study-training {
+        &__list {
+            margin-top: 0;
+            margin-bottom: 0;
+            gap: 15px;
         }
     }
 }
