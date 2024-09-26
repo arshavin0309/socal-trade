@@ -207,6 +207,22 @@
         &.hero-contacts {
             padding-top: 60px;
         }
+
+        &.hero-about {
+            padding-top: 60px;
+        }
+    }
+
+    .hero-about {
+        h2 {
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+
+        &__box {
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
     }
 
     .hero-contacts {
@@ -315,5 +331,35 @@
 
     .form-info {
         font-size: 14px;
+    }
+
+    .protection-about {
+        h2 {
+            margin-bottom: -15px;
+        }
+
+        &__list {
+            margin-top: 0;
+        }
+
+        &__item {
+            gap: 15px;
+        }
+    }
+
+    .awars-about {
+        h2 {
+            margin-bottom: -15px;
+        }
+
+        &__list {
+            margin-top: -15px;
+        }
+    }
+
+    .in-numbers-about {
+        &__title {
+            font-size: 30px;
+        }
     }
 }

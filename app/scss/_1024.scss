@@ -75,4 +75,25 @@
             padding: 10px 15px;
         }
     }
+
+    .in-numbers-about {
+        h2 {
+            margin-bottom: -15px;
+        }
+
+        &__list {
+            margin-top: 0;
+            margin-bottom: 0;
+            gap: 15px;
+        }
+
+        &__item {
+            padding: 30px;
+            gap: 15px;
+        }
+
+        &__title {
+            font-size: 40px;
+        }
+    }
 }

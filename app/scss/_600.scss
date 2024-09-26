@@ -4,10 +4,12 @@
             &.desktop {
                 display: none;
             }
+
             &.mobile {
                 display: flex;
             }
         }
+
         h2 {
             &+p {
                 display: none;
@@ -56,6 +58,27 @@
         &__links {
             width: 100%;
             gap: 15px;
+        }
+    }
+
+
+    .awars-about {
+        &__list {
+            gap: 15px;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__title {
+            width: 160px;
+            height: 160px;
+            margin: auto;
+        }
+
+        p {
+            font-size: 14px;
         }
     }
 }

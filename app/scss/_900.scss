@@ -48,4 +48,10 @@
             order: -1;
         }
     }
+
+    .protection-about {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
 }

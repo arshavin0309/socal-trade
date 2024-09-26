@@ -169,4 +169,22 @@
             text-align: center;
         }
     }
+
+    .in-numbers-about {
+        &__title {
+            font-size: 25px;
+        }
+    }
+
+    .hero-about {
+        &__box {
+            padding: 0;
+            border: none;
+            background: none;
+
+            img {
+                border-radius: 4px;
+            }
+        }
+    }
 }
