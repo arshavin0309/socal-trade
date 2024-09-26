@@ -74,6 +74,20 @@
         }
     }
 
+    .widgets-analytics {
+        &__box {
+            width: 100%;
+        }
+
+        .widget-box {
+            &__content {
+                .mch-widget {
+                    margin: auto;
+                }
+            }
+        }
+    }
+
     .footer {
         .menu {
             grid-template-columns: 1fr;

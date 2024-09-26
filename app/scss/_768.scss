@@ -424,6 +424,12 @@
         h1 {
             margin-bottom: -15px;
         }
+
+        .btn {
+            &.mobile {
+                display: inline-block;
+            }
+        }
     }
 
     .choice-platform {

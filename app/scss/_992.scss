@@ -5,6 +5,24 @@
         }
     }
 
+    .types-conditions__item {
+        &:nth-child(3) {
+            li {
+                color: var(--grey-text);
+            }
+        }
+    }
+
+    .widgets-analytics {
+        .container {
+            flex-direction: column;
+        }
+
+        &__box {
+            margin: auto;
+        }
+    }
+
     .banner-1 {
         &__box {
             padding: 40px 40px 0;

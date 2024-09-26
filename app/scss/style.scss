@@ -1706,6 +1706,12 @@ section {
         margin: auto;
         text-align: center;
     }
+
+    .btn {
+        &.mobile {
+            display: none;
+        }
+    }
 }
 
 .types-conditions {
