@@ -274,4 +274,46 @@
             margin-top: 0;
         }
     }
+
+    .content-contacts {
+        .container {
+            &>p {
+                margin-right: initial;
+                text-align: center;
+            }
+        }
+
+        h2 {
+            margin-top: -15px;
+            text-align: center;
+        }
+
+        &__list {
+            margin-top: 0;
+        }
+
+        &__info {
+            font-size: 14px;
+        }
+
+        &__item {
+            gap: 15px;
+        }
+    }
+
+    form {
+        gap: 10px;
+
+        input {
+            font-size: 16px;
+
+            &[type="submit"] {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .form-info {
+        font-size: 14px;
+    }
 }

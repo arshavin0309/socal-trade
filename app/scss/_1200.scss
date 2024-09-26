@@ -84,8 +84,7 @@
 
     .content-contacts {
         &__list {
-            display: flex;
-            flex-direction: column-reverse;
+            grid-template-columns: repeat(2, 1fr);
             gap: 60px;
         }
     }

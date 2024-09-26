@@ -1186,6 +1186,7 @@ section {
     background: var(--green);
     border-radius: 50%;
     padding: 10px;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.2);
 
     img {
         width: 30px;
@@ -3325,6 +3326,10 @@ section {
         text-transform: none;
     }
 
+    p {
+        text-align: center;
+    }
+
     &__box {
         padding: 30px;
         border-radius: 25px;
@@ -3379,6 +3384,7 @@ section {
         a {
             color: var(--white);
             text-decoration: none;
+            white-space: nowrap;
         }
 
         address {

@@ -38,4 +38,14 @@
             }
         }
     }
+
+    .content-contacts {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        form {
+            order: -1;
+        }
+    }
 }
