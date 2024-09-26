@@ -338,7 +338,7 @@ section {
     .container {
         background: image-set(url(../images/hero-coins.avif),
                 url(../images/hero-coins.webp),
-                url(../images/hero-coins.png)) center / contain no-repeat;
+                url(../images/hero-coins.png)) center top / contain no-repeat;
     }
 
     p {
@@ -511,6 +511,12 @@ section {
             top: 0;
             background: #0057FF80;
             filter: blur(250px);
+        }
+    }
+
+    h2 {
+        &+p {
+            text-align: center;
         }
     }
 

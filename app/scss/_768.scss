@@ -37,6 +37,14 @@
                 display: none;
             }
         }
+
+        h2 {
+            margin-bottom: -15px;
+
+            &+p {
+                color: var(--grey-text);
+            }
+        }
     }
 
     .successes {
@@ -64,6 +72,7 @@
         &__el {
             width: 105px;
             height: 105px;
+            font-size: 16px;
         }
 
         &__list {
@@ -79,6 +88,14 @@
     }
 
     .invest-main {
+        h2 {
+            &+p {
+                max-width: 250px;
+                margin: auto;
+                text-align: center;
+                color: var(--grey-text);
+            }
+        }
         &__list {
             display: none;
         }
@@ -96,6 +113,10 @@
     .conditions-platform {
         h2 {
             margin-bottom: -15px;
+
+            &+p {
+                color: var(--grey-text);
+            }
         }
 
         &__list {
@@ -104,8 +125,9 @@
 
         &__item {
             p {
-                max-width: 265px;
+                max-width: 270px;
                 margin: auto;
+                font-size: 16px;
             }
         }
 
@@ -146,6 +168,13 @@
     }
 
     .benefit-main {
+        h2 {
+            margin-bottom: -15px;
+
+            &+p {
+                color: var(--grey-text);
+            }
+        }
         &__list {
             margin-top: 0;
         }

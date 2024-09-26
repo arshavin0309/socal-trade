@@ -41,7 +41,29 @@
             grid-template-columns: 1fr;
             gap: 15px;
 
+            &:nth-child(1) {
+                &::before {
+                    width: 84px;
+                    height: 30px;
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    width: 84px;
+                    height: 30px;
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    width: 84px;
+                    height: 30px;
+                }
+            }
+
             p {
+                font-size: 14px;
                 text-align: center;
             }
         }
@@ -115,8 +137,8 @@
         }
 
         &__el {
-            width: 85px;
-            height: 85px;
+            width: 100%;
+            height: 100px;
         }
 
         &__content {
@@ -251,6 +273,16 @@
             &+p {
                 text-align: left;
             }
+        }
+    }
+
+    .choice-platform {
+        h2 {
+            white-space: nowrap;
+        }
+
+        h3 {
+            font-size: 14px;
         }
     }
 }
