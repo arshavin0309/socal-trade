@@ -496,4 +496,14 @@
             transform: translate(10px, 10px) rotate(3deg);
         }
     }
+
+    .basics-training {
+        &__item {
+            padding: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
 }
