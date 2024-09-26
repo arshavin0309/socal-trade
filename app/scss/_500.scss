@@ -211,4 +211,25 @@
             }
         }
     }
+
+    .banner-1 {
+        .banner-text {
+            text-align: center;
+
+            &+p {
+                text-align: center;
+            }
+        }
+    }
+
+    .banner-2 {
+        .banner-text {
+            font-size: 30px;
+            text-align: center;
+
+            &+p {
+                text-align: center;
+            }
+        }
+    }
 }

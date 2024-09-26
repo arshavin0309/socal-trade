@@ -112,6 +112,21 @@
         }
     }
 
+    .banner-2 {
+        &__box {
+            padding: 40px 100px 0;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .banner-text {
+            font-size: 35px;
+        }
+
+        &__image {
+            margin: auto;
+        }
+    }
+
     .footer {
         .menu {
             display: grid;

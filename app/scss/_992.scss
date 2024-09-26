@@ -11,6 +11,16 @@
         }
     }
 
+    .banner-2 {
+        &__box {
+            padding: 40px 40px 0;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
     .invest-main {
         &__item {
             width: 120px;

@@ -29,4 +29,18 @@
             grid-template-columns: 1fr;
         }
     }
+
+    .banner-text {
+        font-size: 25px;
+    }
+
+    .banner-2 {
+        .banner-text {
+            font-size: 25px;
+        }
+
+        &__content {
+            min-width: initial;
+        }
+    }
 }

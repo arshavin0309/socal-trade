@@ -426,4 +426,20 @@
             font-size: 30px;
         }
     }
+
+    .banner-1 {
+        &__image {
+            transform: translate(10px, 10px) rotate(3deg);
+        }
+    }
+
+    .banner-2 {
+        &__content {
+            min-width: 270px;
+        }
+
+        &__image {
+            transform: translate(10px, 10px) rotate(3deg);
+        }
+    }
 }
