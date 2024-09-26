@@ -128,4 +128,16 @@
                     url(../images/banner-1-mobile.png)) left top / cover no-repeat;
         }
     }
+
+    .banner-3 {
+        &__box {
+            padding: 165px 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: image-set(url(../images/banner-1-mobile.avif),
+                    url(../images/banner-1-mobile.webp),
+                    url(../images/banner-1-mobile.png)) left top / cover no-repeat;
+        }
+    }
 }

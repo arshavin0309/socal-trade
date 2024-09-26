@@ -127,6 +127,17 @@
         }
     }
 
+    .banner-3 {
+        &__box {
+            padding: 40px 100px 0;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__image {
+            margin: auto;
+        }
+    }
+
     .footer {
         .menu {
             display: grid;

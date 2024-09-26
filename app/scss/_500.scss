@@ -232,4 +232,14 @@
             }
         }
     }
+
+    .banner-3 {
+        .banner-text {
+            text-align: center;
+
+            &+p {
+                text-align: center;
+            }
+        }
+    }
 }
