@@ -356,11 +356,30 @@
     .how-quotes {
         &__item {
             gap: 30px;
+
+            p {
+                color: var(--grey-text);
+            }
+        }
+    }
+
+    .hero-quotes {
+        h2 {
+            margin-top: -15px;
+            margin-bottom: -15px;
         }
     }
 
     .open-quotes {
+        h2 {
+            &+p {
+                margin-top: -15px;
+                margin-bottom: 0;
+            }
+        }
+
         &__list {
+            margin-bottom: 0;
             gap: 15px;
         }
     }

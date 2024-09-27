@@ -81,6 +81,15 @@
     }
 
     .open-quotes {
+        h2 {
+            width: 100%;
+            text-align: left;
+
+            &+p {
+                text-align: left;
+            }
+        }
+
         &__item {
             grid-template-columns: 1fr;
 
@@ -243,23 +252,27 @@
     .btn {
         display: block;
         width: 100%;
+        padding: 20px;
         text-align: center;
 
         &-transparent {
             display: block;
             width: 100%;
+            padding: 20px;
             text-align: center;
         }
 
         &-white {
             display: block;
             width: 100%;
+            padding: 20px;
             text-align: center;
         }
 
         &-black {
             display: block;
             width: 100%;
+            padding: 20px;
             text-align: center;
         }
     }
