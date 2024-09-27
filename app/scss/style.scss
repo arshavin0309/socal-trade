@@ -493,7 +493,7 @@ section {
             width: 100%;
         }
 
-        img {
+        &>img {
             width: 100%;
         }
     }
@@ -2577,6 +2577,7 @@ section {
 
         &+p {
             color: var(--grey-text);
+            text-align: center;
         }
     }
 }
@@ -2717,6 +2718,7 @@ section {
     }
 
     &__list {
+        width: 100%;
         display: grid;
         gap: 20px;
     }

@@ -96,6 +96,7 @@
                 color: var(--grey-text);
             }
         }
+
         &__list {
             display: none;
         }
@@ -175,6 +176,7 @@
                 color: var(--grey-text);
             }
         }
+
         &__list {
             margin-top: 0;
         }
@@ -318,6 +320,7 @@
     .main-news {
         &__list {
             grid-template-columns: 1fr;
+            gap: 15px;
         }
     }
 
@@ -350,9 +353,22 @@
         }
     }
 
+    .how-quotes {
+        &__item {
+            gap: 30px;
+        }
+    }
+
+    .open-quotes {
+        &__list {
+            gap: 15px;
+        }
+    }
+
     .main-forecasts {
         &__list {
             grid-template-columns: 1fr;
+            gap: 15px;
         }
     }
 
@@ -432,6 +448,39 @@
         }
     }
 
+    .condition-analytics {
+        h2 {
+            margin-bottom: -15px;
+
+            &+p {
+                color: var(--grey-text);
+            }
+        }
+    }
+
+    .hero-analytics {
+        h2 {
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+    }
+
+    .widgets-analytics {
+        h2 {
+            margin-bottom: -15px;
+        }
+    }
+
+    .calendar-analytics {
+        h2 {
+            margin-bottom: -15px;
+
+            &+p {
+                color: var(--grey-text);
+            }
+        }
+    }
+
     .choice-platform {
         &__list {
             margin-top: 0;
@@ -439,8 +488,16 @@
     }
 
     .advantages-indexes {
+        h2 {
+            margin-bottom: -15px;
+        }
+
         &__list {
             display: none;
+        }
+
+        .btn {
+            margin-top: 0;
         }
     }
 

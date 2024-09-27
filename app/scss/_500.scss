@@ -74,9 +74,67 @@
         }
     }
 
+    .calendar-analytics {
+        h2 {
+            font-size: 23px;
+        }
+    }
+
+    .open-quotes {
+        &__item {
+            grid-template-columns: 1fr;
+
+            &:nth-child(1) {
+                &:before {
+                    width: 84px;
+                    height: 30px;
+                }
+            }
+
+            &:nth-child(2) {
+                &:before {
+                    width: 84px;
+                    height: 30px;
+                }
+            }
+
+            &:nth-child(3) {
+                &:before {
+                    width: 84px;
+                    height: 30px;
+                }
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .condition-analytics {
+        h2 {
+            width: 100%;
+            text-align: left;
+
+            &+p {
+                text-align: left;
+            }
+        }
+    }
+
     .widgets-analytics {
         &__box {
             width: 100%;
+        }
+
+        h2 {
+            width: 100%;
+            text-align: left;
+
+            &+p {
+                text-align: left;
+                color: var(--grey-text);
+            }
         }
 
         .widget-box {

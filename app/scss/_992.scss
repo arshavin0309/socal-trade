@@ -13,9 +13,19 @@
         }
     }
 
+    .how-quotes {
+        &__image {
+            min-width: 200px;
+        }
+    }
+
     .widgets-analytics {
         .container {
             flex-direction: column;
+        }
+
+        h2 {
+            max-width: 100%;
         }
 
         &__box {

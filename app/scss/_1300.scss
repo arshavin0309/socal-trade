@@ -138,6 +138,39 @@
         }
     }
 
+    .open-quotes {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            grid-template-columns: 150px 1fr;
+            align-items: center;
+
+            &:nth-child(1) {
+                &::before {
+                    width: 150px;
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    width: 150px;
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    width: 150px;
+                }
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+
     .widgets-analytics {
         h2 {
             max-width: 300px;

@@ -155,6 +155,12 @@
         }
     }
 
+    .how-quotes {
+        &__item {
+            padding: 30px;
+        }
+    }
+
     .conditions-platform {
         &__list {
             display: grid;
