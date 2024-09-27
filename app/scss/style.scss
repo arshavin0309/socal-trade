@@ -3522,7 +3522,7 @@ form {
         li {
             display: flex;
             gap: 8px;
-            align-items: center;
+            align-items: start;
             padding-left: 15px;
             font-family: 'Rubik', sans-serif;
             font-size: 22px;
@@ -3538,6 +3538,8 @@ form {
                 height: 10px;
                 border-radius: 50%;
                 background: var(--green);
+                flex: 0 0 auto;
+                transform: translateY(9px);
             }
         }
     }
