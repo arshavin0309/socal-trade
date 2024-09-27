@@ -320,6 +320,23 @@
                 .choice-main__box {
                     max-width: 335px;
                 }
+
+                .choice-main__number {
+                    position: relative;
+                    overflow: initial;
+
+                    &::before {
+                        z-index: -1;
+                        position: absolute;
+                        content: '';
+                        top: 65px;
+                        left: 55px;
+                        width: 100%;
+                        height: 100%;
+                        background: var(--blue);
+                        filter: blur(150px);
+                    }
+                }
             }
 
             &:nth-child(2) {
@@ -331,6 +348,23 @@
             &:nth-child(3) {
                 .choice-main__box {
                     max-width: 335px;
+                }
+
+                .choice-main__number {
+                    position: relative;
+                    overflow: initial;
+
+                    &::before {
+                        z-index: -1;
+                        position: absolute;
+                        content: '';
+                        top: 65px;
+                        left: 55px;
+                        width: 100%;
+                        height: 100%;
+                        background: var(--green);
+                        filter: blur(150px);
+                    }
                 }
             }
         }
