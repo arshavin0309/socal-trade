@@ -363,6 +363,16 @@
         }
     }
 
+    .how-cryptocurrencies {
+        &__item {
+            gap: 30px;
+
+            p {
+                color: var(--grey-text);
+            }
+        }
+    }
+
     .find-calendar {
         &__item {
             gap: 30px;
