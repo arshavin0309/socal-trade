@@ -27,10 +27,8 @@ let header = document.querySelector(".header");
 window.onscroll = function () {
     if (pageYOffset > 50) {
         header.classList.add("scrolled");
-        body.style = "margin-top: 100px"
     } else {
         header.classList.remove("scrolled");
-        body.style = "margin: 0"
     };
 };
 

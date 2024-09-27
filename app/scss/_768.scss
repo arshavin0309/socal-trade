@@ -32,33 +32,6 @@
     }
 
     .platform-main {
-        .container {
-            &::before {
-                width: 90%;
-                height: 220px;
-                top: 40px;
-                right: -30%;
-                left: auto;
-                bottom: auto;
-                background: var(--blue);
-                filter: blur(200px);
-            }
-
-            &:after {
-                position: absolute;
-                content: '';
-                z-index: -1;
-                width: 40%;
-                height: 250px;
-                top: auto;
-                left: -10%;
-                right: auto;
-                bottom: -70px;
-                background: var(--blue);
-                filter: blur(200px);
-            }
-        }
-
         h2 {
             margin-bottom: -15px;
 
@@ -69,36 +42,6 @@
     }
 
     .successes {
-        .container {
-            &::before {
-                z-index: -1;
-                position: absolute;
-                content: '';
-                width: 80%;
-                height: 170px;
-                top: 155px;
-                left: auto;
-                right: -20%;
-                bottom: auto;
-                background: var(--green);
-                filter: blur(250px);
-            }
-
-            &::after {
-                z-index: -1;
-                position: absolute;
-                content: '';
-                top: auto;
-                left: -20%;
-                right: auto;
-                bottom: -60px;
-                width: 60%;
-                height: 130px;
-                background: var(--green);
-                filter: blur(250px);
-            }
-        }
-
         h2 {
             margin-bottom: -15px;
         }
@@ -220,33 +163,6 @@
     }
 
     .benefit-main {
-        .container {
-            &::before {
-                width: 50%;
-                height: 220px;
-                top: 0;
-                right: -20%;
-                left: auto;
-                bottom: auto;
-                background: var(--green);
-                filter: blur(200px);
-            }
-
-            &::after {
-                z-index: -1;
-                position: absolute;
-                content: '';
-                width: 80%;
-                height: 260px;
-                top: 50%;
-                left: -20%;
-                right: auto;
-                bottom: auto;
-                background: var(--blue);
-                filter: blur(200px);
-            }
-        }
-
         h2 {
             margin-bottom: -15px;
 
@@ -270,22 +186,6 @@
     }
 
     .start-main {
-        .container {
-            &::before {
-                z-index: -1;
-                position: absolute;
-                content: "";
-                width: 80%;
-                height: 170px;
-                top: 155px;
-                left: auto;
-                right: -20%;
-                bottom: auto;
-                background: var(--green);
-                filter: blur(250px);
-            }
-        }
-
         h2 {
             margin-bottom: 0;
         }
@@ -320,23 +220,6 @@
                 .choice-main__box {
                     max-width: 335px;
                 }
-
-                .choice-main__number {
-                    position: relative;
-                    overflow: initial;
-
-                    &::before {
-                        z-index: -1;
-                        position: absolute;
-                        content: '';
-                        top: 65px;
-                        left: 55px;
-                        width: 100%;
-                        height: 100%;
-                        background: var(--blue);
-                        filter: blur(150px);
-                    }
-                }
             }
 
             &:nth-child(2) {
@@ -349,44 +232,11 @@
                 .choice-main__box {
                     max-width: 335px;
                 }
-
-                .choice-main__number {
-                    position: relative;
-                    overflow: initial;
-
-                    &::before {
-                        z-index: -1;
-                        position: absolute;
-                        content: '';
-                        top: 65px;
-                        left: 55px;
-                        width: 100%;
-                        height: 100%;
-                        background: var(--green);
-                        filter: blur(150px);
-                    }
-                }
             }
         }
     }
 
     .analytics-main {
-        .container {
-            &::before {
-                z-index: -1;
-                position: absolute;
-                content: "";
-                width: 80%;
-                height: 170px;
-                top: 155px;
-                left: auto;
-                right: -20%;
-                bottom: auto;
-                background: var(--green);
-                filter: blur(250px);
-            }
-        }
-
         h2 {
             order: -3;
             text-align: center;
@@ -424,24 +274,6 @@
         &:first-child {
             margin-top: 80px;
             padding-top: 60px;
-
-            .container {
-                &::before {
-                    top: -60px;
-                    right: -20%;
-                    width: 80%;
-                    height: 200px;
-                    filter: blur(80px);
-                }
-
-                &::after {
-                    top: 80px;
-                    left: -20%;
-                    width: 90%;
-                    height: 280px;
-                    filter: blur(100px);
-                }
-            }
         }
     }
 
