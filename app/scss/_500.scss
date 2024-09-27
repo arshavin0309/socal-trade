@@ -1,10 +1,5 @@
 @media (max-width: 500px) {
 
-    h1,
-    .h1 {
-        font-size: 30px;
-    }
-
     .header {
         .menu {
             &>.menu-item {
@@ -77,6 +72,61 @@
     .calendar-analytics {
         h2 {
             font-size: 23px;
+        }
+    }
+
+    .popular-currencies {
+        h2 {
+            width: 100%;
+            margin-bottom: -15px;
+            text-align: left;
+
+            &+p {
+                text-align: left;
+            }
+        }
+    }
+
+    .what-cryptocurrencies {
+        &__item {
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .faq-currencies {
+        &__list {
+            width: calc(100% + 40px);
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+    }
+
+    .what-futures {
+        h2 {
+            width: 100%;
+            text-align: left;
+
+            &+p {
+                text-align: left;
+            }
+        }
+    }
+
+    .what-indexes {
+        &__item {
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
         }
     }
 

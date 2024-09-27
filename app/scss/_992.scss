@@ -19,6 +19,12 @@
         }
     }
 
+    .find-calendar {
+        &__image {
+            min-width: 200px;
+        }
+    }
+
     .widgets-analytics {
         .container {
             flex-direction: column;

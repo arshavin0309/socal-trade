@@ -94,6 +94,8 @@
             width: 160px;
             height: 160px;
             margin: auto;
+            font-size: 12px;
+            padding: 16px;
         }
 
         p {
@@ -172,6 +174,32 @@
     }
 
     .how-quotes {
+        &__image {
+            width: 100%;
+            min-width: initial;
+            height: 100px;
+        }
+
+        &__item {
+            flex-direction: column;
+            gap: 45px;
+
+            &:nth-child(2n) {
+                flex-direction: column;
+            }
+        }
+
+        &__box {
+            gap: 15px;
+        }
+
+        .btn {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .find-calendar {
         &__image {
             width: 100%;
             min-width: initial;

@@ -493,8 +493,10 @@ section {
             width: 100%;
         }
 
-        &>img {
-            width: 100%;
+        picture {
+            img {
+                width: 100%;
+            }
         }
     }
 }
@@ -2075,6 +2077,18 @@ section {
     }
 }
 
+.hero-cryptocurrencies {
+    h1 {
+        text-transform: none;
+    }
+
+    h2 {
+        &+p {
+            text-align: center;
+        }
+    }
+}
+
 .popular-indexes {
     h2+p {
         max-width: 680px;
@@ -2488,6 +2502,7 @@ section {
 .popular-stocks {
     h2+p {
         color: var(--grey-text);
+        text-align: center;
     }
 }
 
@@ -2852,7 +2867,7 @@ section {
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(122.16% 134.2% at 50% 25.68%, rgba(84, 151, 252, 0.1) 20.5%, rgba(84, 151, 252, 0) 74.5%);
 
             .find-calendar__image {
-                background: image-set(url(../images/basics-training-image-2.avif), url(../images/basics-training-image-2.webp), url(../images/basics-training-image-2.png)) center / contain no-repeat;
+                background: image-set(url(../images/basics-training-image-8.avif), url(../images/basics-training-image-8.webp), url(../images/basics-training-image-8.png)) center / contain no-repeat;
             }
 
             p {
@@ -3032,6 +3047,7 @@ section {
     display: flex;
     gap: 16px;
     align-items: center;
+    margin-top: 30px;
 
     li {
         display: flex;
@@ -3039,7 +3055,6 @@ section {
         justify-content: center;
         width: 50px;
         height: 50px;
-        margin-top: 30px;
         border: 1px solid #04758699;
         border-radius: 50%;
         list-style: none;

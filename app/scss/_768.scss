@@ -5,12 +5,12 @@
         max-width: 610px;
         margin: auto;
         text-align: center;
-        font-size: 40px;
+        font-size: clamp(23px, 4vw, 40px);
     }
 
     h2,
     .h2 {
-        font-size: 30px;
+        font-size: clamp(20px, 4vw, 30px);
     }
 
     h3,
@@ -363,7 +363,24 @@
         }
     }
 
+    .find-calendar {
+        &__item {
+            gap: 30px;
+
+            p {
+                color: var(--grey-text);
+            }
+        }
+    }
+
     .hero-quotes {
+        h2 {
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+    }
+
+    .hero-calendar {
         h2 {
             margin-top: -15px;
             margin-bottom: -15px;
@@ -613,6 +630,124 @@
         }
     }
 
+    .popular-raw {
+        h2 {
+            margin-bottom: -15px;
+        }
+    }
+
+    .hero-cryptocurrencies {
+        h2 {
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+    }
+
+    .what-cryptocurrencies {
+        &__list {
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .charts-indexes {
+        h2 {
+            margin-bottom: -15px;
+        }
+    }
+
+    .hero-currencies {
+        h2 {
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+    }
+
+    .faq-currencies {
+        &__list {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .what-futures {
+        &__list {
+            margin-top: 0;
+            margin-bottom: 0;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        &__item {
+            p {
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    .hero-stocks {
+        h2 {
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+    }
+
+    .hero-raw {
+        h2 {
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+    }
+
+    .popular-stocks {
+        h2 {
+            margin-bottom: -15px;
+        }
+    }
+
+    .popular-indexes {
+        h2 {
+            margin-bottom: -15px;
+        }
+    }
+
+    .hero-indexes {
+        h2 {
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+    }
+
+    .what-indexes {
+        &__list {
+            margin-top: 0;
+            margin-bottom: 0;
+            gap: 15px;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .what-stocks {
+        &__list {
+            margin-top: 0;
+            margin-bottom: 0;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        &__item {
+            p {
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
     .basics-training {
         h2 {
             margin-bottom: -15px;
@@ -629,6 +764,11 @@
 
         h3 {
             font-size: 20px;
+            margin-bottom: 15px;
+
+            &+p {
+                color: var(--grey-text);
+            }
         }
     }
 

@@ -161,6 +161,22 @@
         }
     }
 
+    .faq-currencies {
+        &__list {
+            gap: 15px;
+        }
+
+        li {
+            padding: 30px;
+        }
+    }
+
+    .find-calendar {
+        &__item {
+            padding: 30px;
+        }
+    }
+
     .conditions-platform {
         &__list {
             display: grid;
