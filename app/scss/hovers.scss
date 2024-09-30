@@ -42,6 +42,18 @@
         }
     }
 
+    .article {
+        &__post {
+            a {
+                transition: var(--transition);
+
+                &:hover {
+                    color: var(--green);
+                }
+            }
+        }
+    }
+
     .invest-main__item:hover::before {
         animation: rotate 1s linear 0s infinite normal none;
         backface-visibility: hidden;

@@ -44,8 +44,8 @@
             grid-template-columns: 1fr;
         }
 
-        form {
-            order: -1;
+        &__item {
+            order: 1;
         }
     }
 
