@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale = 1.0">
+
+    <!-- Берется из js -->
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="header__logo"></a>
+
+            <nav class="header__nav">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="/">Главная</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Торговля</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="/conditions.html">Торговые условия</a></li>
+                            <li class="menu-item"><a href="/platform.html">Торговая платформа</a></li>
+                            <li class="menu-item"><a href="/training.html">Обучение трейдингу</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Аналитика</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="/analytics.html">Анализ рынка</a></li>
+                            <li class="menu-item"><a href="/news.html">Новости рынка</a></li>
+                            <li class="menu-item"><a href="/forecasts.html">Прогнозы рынка</a></li>
+                            <li class="menu-item"><a href="/quotes.html">Онлайн котировки</a></li>
+                            <li class="menu-item"><a href="/calendar.html">Экономический календарь</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Инструменты</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="/stocks.html">Акции</a></li>
+                            <li class="menu-item"><a href="/indexes.html">Индексы</a></li>
+                            <li class="menu-item"><a href="/raw-material.html">Сырье</a></li>
+                            <li class="menu-item"><a href="/currencies.html">Валюты</a></li>
+                            <li class="menu-item"><a href="/cryptocurrencies.html">Криптовалюты</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">О компании</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="/about.html">О нас</a></li>
+                            <li class="menu-item"><a href="/contacts.html">Контакты</a></li>
+                            <li class="menu-item"><a href="/documents.html">Документы</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn-transparent" target="_blank">Открыть счёт</a>
+            </nav>
+
+            <button class="header__burger">Меню</button>
+        </div>
+    </header>
+
+<main>
+    <section class="hero-quotes">
+        <div class="container">
+            <h1 class="text1">Котировки</h1>
+            <h2>Будьте в курсе актуальных цен на финансовые инструменты</h2>
+            <p class="text1">Валютные пары, нефть, криптовалюты — инвестируйте в любой из этих инструментов, или торгуйте сразу на нескольких рынках</p>
+
+            <div class="widget-box">
+                <div class="widget-box__header">
+                    <div class="widget-box__left-corner">
+                        <div class="widget-box__btns">
+                            <div class="widget-box__close"></div>
+                            <div class="widget-box__unwrap"></div>
+                            <div class="widget-box__roll-up"></div>
+                        </div>
+                        <div class="widget-box__nav">
+                            <div class="widget-box__back"></div>
+                            <div class="widget-box__next"></div>
+                        </div>
+                    </div>
+
+                    <div class="widget-box__search">
+                        <div class="widget-box__name">SOCAL-TRADE-LTD</div>
+                        <div class="widget-box__update"></div>
+                    </div>
+
+                    <div class="widget-box__right-corner">
+                        <div class="widget-box__to-share"></div>
+                        <div class="widget-box__add"></div>
+                    </div>
+                </div>
+
+                <div class="widget-box__content">
+                    <script src="https://api.marketcheese.com/widgets/chart/widget.js" data-config='{"timeframe":"H1","barStyle":"Candle","offset":30,"colorScheme":"light","language":"ru","symbolsEnabled":true,"showTools":true,"terminalBtnVisible":false,"symbol":"EURUSD","devSource":"WDT"}'></script>
+                </div>
+            </div>
+
+            <a href="##" target="_blank" class="btn">Начать инвестировать</a>
+        </div>
+    </section>
+
+    <section class="open-quotes">
+        <div class="container">
+            <h2>Как открыть сделку</h2>
+            <p class="text1">Чтобы открыть сделку, выберите нужную валютную пару и задайте параметры ордера. Следуйте простым шагам, чтобы быстро и легко начать торговлю.</p>
+
+            <div class="open-quotes__list">
+                <div class="open-quotes__item">
+                    <p class="text1">Выберите валютную пару и настройте параметры ордера для открытия сделки</p>
+                </div>
+                <div class="open-quotes__item">
+                    <p class="text1">Нажмите «Новый ордер» в торговом терминале, установите объем сделки и уровни Take Profit и Stop Loss</p>
+                </div>
+                <div class="open-quotes__item">
+                    <p class="text1">Нажмите «Купить» или «Продать» в зависимости от направления сделки</p>
+                </div>
+            </div>
+
+            <a href="##" target="_blank" class="btn">Зарегистрироваться</a>
+        </div>
+    </section>
+
+    <section class="how-quotes">
+        <div class="container">
+            <div class="how-quotes__list">
+                <div class="how-quotes__item">
+                    <div class="how-quotes__image"></div>
+                    <div class="how-quotes__box">
+                        <h3>Совершайте сделки по самым волатильным валютным парам</h3>
+                        <p class="text1">Торгуйте самыми динамичными валютными парами и извлекайте выгоду из их значительных ценовых движений. Быстрая реакция на изменения курсов позволит вам эффективно управлять своими инвестициями.</p>
+                        <a href="##" target="_blank" class="btn">Начать инвестировать</a>
+                    </div>
+                </div>
+
+                <div class="how-quotes__item">
+                    <div class="how-quotes__image"></div>
+                    <div class="how-quotes__box">
+                        <h3>Торгуйте криптовалютами — прикоснитесь к экономике будущего!</h3>
+                        <p class="text1">Откройте для себя возможности торговли биткоином, эфиром и другими топовыми криптовалютами. Присоединяйтесь к рынку будущего и воспользуйтесь преимуществами цифровых финансов.</p>
+                        <a href="##" target="_blank" class="btn">Начать инвестировать</a>
+                    </div>
+                </div>
+
+                <div class="how-quotes__item">
+                    <div class="how-quotes__image"></div>
+                    <div class="how-quotes__box">
+                        <h3>Торгуйте CFD на акции ведущих мировых брендов и корпораций</h3>
+                        <p class="text1">Инвестируйте в CFD на акции крупнейших корпораций, чтобы воспользоваться их рыночной волатильностью. Торгуйте акциями известных брендов и получайте прибыль от колебаний их стоимости.</p>
+                        <a href="##" target="_blank" class="btn">Начать инвестировать</a>
+                    </div>
+                </div>
+
+                <div class="how-quotes__item">
+                    <div class="how-quotes__image"></div>
+                    <div class="how-quotes__box">
+                        <h3>Торгуйте CFD на основные индексы: S&P 500, DAX 30, CAC 40, Nasdaq 100</h3>
+                        <p class="text1">Инвестируйте в CFD на основные фондовые индексы и извлекайте выгоду из их динамики. Торгуйте индексами, отражающими состояние крупнейших мировых экономик, и диверсифицируйте свои инвестиционные портфели.</p>
+                        <a href="##" target="_blank" class="btn">Начать инвестировать</a>
+                    </div>
+                </div>
+
+                <div class="how-quotes__item">
+                    <div class="how-quotes__image"></div>
+                    <div class="how-quotes__box">
+                        <h3>Самые популярные спот-металлы для торговли, включая золото и серебро</h3>
+                        <p class="text1">Инвестируйте в такие спот-металлы, как золото и серебро, чтобы обеспечить надежность и стабильность вашего портфеля. Торгуйте драгоценными металлами на форекс и извлекайте выгоду из их колебаний цен.</p>
+                        <a href="##" target="_blank" class="btn">Начать инвестировать</a>
+                    </div>
+                </div>
+
+                <div class="how-quotes__item">
+                    <div class="how-quotes__image"></div>
+                    <div class="how-quotes__box">
+                        <h3>Торгуйте CFD на эталонные марки нефти, такие как Brent и WTI</h3>
+                        <p class="text1">Получите доступ к торговле CFD на основные марки нефти, отражающие мировые тенденции в энергетическом секторе. Используйте ценовые движения Brent и WTI для эффективного управления своими инвестициями.</p>
+                        <a href="##" target="_blank" class="btn">Начать инвестировать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-3">
+
+        <div class="container">
+
+            <div class="banner-3__box">
+
+                <div class="banner-3__content">
+
+                    <h2 class="banner-text">станьте профи в трейдинге</h2>
+
+                    <p class="text2">Не знаете, с чего начать? Мы подскажем! Начните практиковаться в торговле с опытными специалистами Socal Trade LTD</p>
+
+                    <a href="#" target="_blank" class="btn-black">Открыть счёт</a>
+
+                </div>
+
+                <div class="banner-3__image"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+</main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__box">
+
+            <a href="/" class="footer__logo"></a>
+
+            <p class="text2">ваш ключ к миру высокоточных торгов</p>
+
+            <a href="#" target="_blank" class="btn-transparent">Начать торговать</a>
+
+        </div>
+
+        <nav class="footer__nav">
+
+            <ul class="menu">
+
+                <li class="menu-item">
+
+                    <a href="/">Главная</a>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="##">Торговля</a>
+
+                    <ul class="sub-menu">
+
+                        <li class="menu-item"><a href="/conditions.html">Торговые условия</a></li>
+
+                        <li class="menu-item"><a href="/platform.html">Торговая платформа</a></li>
+
+                        <li class="menu-item"><a href="/training.html">Обучение трейдингу</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="##">Аналитика</a>
+
+                    <ul class="sub-menu">
+
+                        <li class="menu-item"><a href="/analytics.html">Анализ рынка</a></li>
+
+                        <li class="menu-item"><a href="/news.html">Новости рынка</a></li>
+
+                        <li class="menu-item"><a href="/forecasts.html">Прогнозы рынка</a></li>
+
+                        <li class="menu-item"><a href="/quotes.html">Онлайн котировки</a></li>
+
+                        <li class="menu-item"><a href="/calendar.html">Экономический календарь</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="##">Инструменты</a>
+
+                    <ul class="sub-menu">
+
+                        <li class="menu-item"><a href="/stocks.html">Акции</a></li>
+
+                        <li class="menu-item"><a href="/indexes.html">Индексы</a></li>
+
+                        <li class="menu-item"><a href="/raw-material.html">Сырье</a></li>
+
+                        <li class="menu-item"><a href="/currencies.html">Валюты</a></li>
+
+                        <li class="menu-item"><a href="/cryptocurrencies.html">Криптовалюты</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="##">О компании</a>
+
+                    <ul class="sub-menu">
+
+                        <li class="menu-item"><a href="/about.html">О нас</a></li>
+
+                        <li class="menu-item"><a href="/contacts.html">Контакты</a></li>
+
+                        <li class="menu-item"><a href="/documents.html">Документы</a></li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <div class="footer__documents">
+
+                <a href="#" target="_blank">Политика AML KYC</a>
+
+                <a href="#" target="_blank">Политика возврата</a>
+
+                <a href="#" target="_blank">Уведомление о рисках</a>
+
+                <a href="#" target="_blank">Клиентское соглашение</a>
+
+                <a href="#" target="_blank">Политика конфиденциальности</a>
+
+            </div>
+
+        </nav>
+
+        <div class="footer__copyright">
+
+            <p class="text2">Уведомление о рисках: Инвестирование в группы высокого риска: (Forex) и контрактами на разницу (CFD) является спекулятивной операцией, включая высокий риск, и не подходит для каждого инвестора. Вы можете понести частичные, так и полные потери вложенных средств, поэтому мы не советуем инвестировать капитал, которым вы не можете рисковать. Вы должны знать о повышенном риске, связанном с использованием кредитного плеча. Мы настоятельно рекомендуем вам ознакомиться с условиями и услугами нашего веб-сайта, прежде чем начать пользоваться нашим сервисом.</p>
+
+            <p class="text2">Все права защищены. Socal Trade LTD</p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<div class="upButton">
+
+    <img src="../images/up-btn.svg" alt="кнопка наверх">
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+
+<script defer src="/js/main.min.js"></script>
+
+</body>
+
+</html>

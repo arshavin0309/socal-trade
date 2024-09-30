@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale = 1.0">
+
+    <!-- Берется из js -->
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="header__logo"></a>
+
+            <nav class="header__nav">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="/">Главная</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Торговля</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="/conditions.html">Торговые условия</a></li>
+                            <li class="menu-item"><a href="/platform.html">Торговая платформа</a></li>
+                            <li class="menu-item"><a href="/training.html">Обучение трейдингу</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Аналитика</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="/analytics.html">Анализ рынка</a></li>
+                            <li class="menu-item"><a href="/news.html">Новости рынка</a></li>
+                            <li class="menu-item"><a href="/forecasts.html">Прогнозы рынка</a></li>
+                            <li class="menu-item"><a href="/quotes.html">Онлайн котировки</a></li>
+                            <li class="menu-item"><a href="/calendar.html">Экономический календарь</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Инструменты</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="/stocks.html">Акции</a></li>
+                            <li class="menu-item"><a href="/indexes.html">Индексы</a></li>
+                            <li class="menu-item"><a href="/raw-material.html">Сырье</a></li>
+                            <li class="menu-item"><a href="/currencies.html">Валюты</a></li>
+                            <li class="menu-item"><a href="/cryptocurrencies.html">Криптовалюты</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">О компании</a>
+
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="/about.html">О нас</a></li>
+                            <li class="menu-item"><a href="/contacts.html">Контакты</a></li>
+                            <li class="menu-item"><a href="/documents.html">Документы</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn-transparent" target="_blank">Открыть счёт</a>
+            </nav>
+
+            <button class="header__burger">Меню</button>
+        </div>
+    </header>
+
+<main>
+    <section class="hero-analytics">
+        <div class="container">
+            <h1 class="text1">Аналитика</h1>
+            <h2>Торговая аналитика от BTC Group</h2>
+            <p class="text1">Команда аналитиков Socal Trade LTD проводит точный технический анализ, чтобы трейдеры могли использовать эту информацию в качестве руководства для принятия решений.</p>
+            <a href="##" target="_blank" class="btn">Начать инвестировать</a>
+        </div>
+    </section>
+
+    <section class="calendar-analytics">
+        <div class="container">
+            <h2>Экономический календарь</h2>
+            <p class="text1">Инвестируйте в акции крупнейших мировых компаний</p>
+
+            <div class="widget-box">
+                <div class="widget-box__header">
+                    <div class="widget-box__left-corner">
+                        <div class="widget-box__btns">
+                            <div class="widget-box__close"></div>
+                            <div class="widget-box__unwrap"></div>
+                            <div class="widget-box__roll-up"></div>
+                        </div>
+                        <div class="widget-box__nav">
+                            <div class="widget-box__back"></div>
+                            <div class="widget-box__next"></div>
+                        </div>
+                    </div>
+
+                    <div class="widget-box__search">
+                        <div class="widget-box__name">SOCAL-TRADE-LTD</div>
+                        <div class="widget-box__update"></div>
+                    </div>
+
+                    <div class="widget-box__right-corner">
+                        <div class="widget-box__to-share"></div>
+                        <div class="widget-box__add"></div>
+                    </div>
+                </div>
+
+                <div class="widget-box__content">
+                    <script src="https://api.marketcheese.com/widgets/calendar/widget.js" data-config='{"filters":{"countries":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27"},"language":"ru","timezone":"current","upload":"manual","devSource":"WDT"}'></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="widgets-analytics">
+        <div class="container">
+            <div class="widgets-analytics__box">
+                <h2>Лидеры рынка</h2>
+                <p class="text1">Принимайте быстрые торговые решения благодаря показателям лидеров рынка</p>
+
+                <div class="widget-box">
+                    <div class="widget-box__header">
+                        <div class="widget-box__left-corner">
+                            <div class="widget-box__btns">
+                                <div class="widget-box__close"></div>
+                                <div class="widget-box__unwrap"></div>
+                                <div class="widget-box__roll-up"></div>
+                            </div>
+                            <div class="widget-box__nav">
+                                <div class="widget-box__back"></div>
+                                <div class="widget-box__next"></div>
+                            </div>
+                        </div>
+
+                        <div class="widget-box__search">
+                            <div class="widget-box__name">SOCAL-TRADE-LTD</div>
+                            <div class="widget-box__update"></div>
+                        </div>
+
+                        <div class="widget-box__right-corner">
+                            <div class="widget-box__to-share"></div>
+                            <div class="widget-box__add"></div>
+                        </div>
+                    </div>
+
+                    <div class="widget-box__content">
+                        <script src="https://api.marketcheese.com/widgets/leaders/widget.js" data-config='{"language":"ru","devSource":"WDT"}'></script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widgets-analytics__box">
+                <h2>Важное событие</h2>
+                <p class="text1">Главные экономические события мира и реакция рынка в реальном времени</p>
+
+                <div class="widget-box">
+                    <div class="widget-box__header">
+                        <div class="widget-box__left-corner">
+                            <div class="widget-box__btns">
+                                <div class="widget-box__close"></div>
+                                <div class="widget-box__unwrap"></div>
+                                <div class="widget-box__roll-up"></div>
+                            </div>
+                            <div class="widget-box__nav">
+                                <div class="widget-box__back"></div>
+                                <div class="widget-box__next"></div>
+                            </div>
+                        </div>
+
+                        <div class="widget-box__search">
+                            <div class="widget-box__name">SOCAL-TRADE-LTD</div>
+                            <div class="widget-box__update"></div>
+                        </div>
+
+                        <div class="widget-box__right-corner">
+                            <div class="widget-box__to-share"></div>
+                            <div class="widget-box__add"></div>
+                        </div>
+                    </div>
+
+                    <div class="widget-box__content">
+                        <script src="https://api.marketcheese.com/widgets/notifier/widget.js" data-config='{"language":"ru","period":"all","multipleIndicators":true,"adaptive":true,"devSource":"WDT"}'></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="condition-analytics">
+        <div class="container">
+            <h2>Состояние рынка</h2>
+            <p class="text1">Текущее состояние рынка по финансовым инструментам на рынке. Позволяет узнать цену на конкретное время и увидеть динамику по различным периодам.</p>
+
+            <div class="widget-box">
+                <div class="widget-box__header">
+                    <div class="widget-box__left-corner">
+                        <div class="widget-box__btns">
+                            <div class="widget-box__close"></div>
+                            <div class="widget-box__unwrap"></div>
+                            <div class="widget-box__roll-up"></div>
+                        </div>
+                        <div class="widget-box__nav">
+                            <div class="widget-box__back"></div>
+                            <div class="widget-box__next"></div>
+                        </div>
+                    </div>
+
+                    <div class="widget-box__search">
+                        <div class="widget-box__name">SOCAL-TRADE-LTD</div>
+                        <div class="widget-box__update"></div>
+                    </div>
+
+                    <div class="widget-box__right-corner">
+                        <div class="widget-box__to-share"></div>
+                        <div class="widget-box__add"></div>
+                    </div>
+                </div>
+
+                <div class="widget-box__content">
+                    <script src="https://api.marketcheese.com/widgets/markets/widget.js" data-config='{"language":"ru","orientation":"auto","defaultPeriod":"week","adaptive":true,"devSource":"WDT","groups":[{"name":"Форекс","symbols":"42,48,57,68,87"},{"name":"Товарные фьючерсы","symbols":"127,129,187,188"},{"name":"Акции США","symbols":"11,27,30,35,196"}]}'></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefit-main">
+
+        <div class="container">
+
+            <h2>получайте максимум пользы от трейдинга</h2>
+
+            <p class="text1">Освойте основные стратегии, улучшите навыки анализа и принимайте обоснованные торговые решения. Подходите к трейдингу с уверенностью и достигайте максимальных результатов!</p>
+
+            <div class="benefit-main__list">
+
+                <div class="benefit-main__item">
+
+                    <picture>
+
+                        <source srcset="../images/benefit-main-item-1.avif">
+
+                        <source srcset="../images/benefit-main-item-1.webp">
+
+                        <img src="../images/benefit-main-item-1.png" alt="">
+
+                    </picture>
+
+                    <div class="benefit-main__box">
+
+                        <h3>Используйте полезные виджеты и автоматизацию</h3>
+
+                        <p class="text1">Настраивайте автоматическую торговлю, чтобы система сама торговала по заранее заданным правилам.</p>
+
+                        <a href="#" target="_blank" class="text1 benefit-main__link">Подробнее</a>
+
+                    </div>
+
+                </div>
+
+                <div class="benefit-main__item">
+
+                    <picture>
+
+                        <source srcset="../images/benefit-main-item-2.avif">
+
+                        <source srcset="../images/benefit-main-item-2.webp">
+
+                        <img src="../images/benefit-main-item-2.png" alt="">
+
+                    </picture>
+
+                    <div class="benefit-main__box">
+
+                        <h3>Торгуйте на удобном терминале</h3>
+
+                        <p class="text1">Используйте удобный терминал. Анализируйте рынок и принимайте решения с помощью графиков.</p>
+
+                        <a href="#" target="_blank" class="text1 benefit-main__link">Подробнее</a>
+
+                    </div>
+
+                </div>
+
+                <div class="benefit-main__item">
+
+                    <picture>
+
+                        <source srcset="../images/benefit-main-item-3.avif">
+
+                        <source srcset="../images/benefit-main-item-3.webp">
+
+                        <img src="../images/benefit-main-item-3.png" alt="">
+
+                    </picture>
+
+                    <div class="benefit-main__box">
+
+                        <h3>Управляйте своими финансами через личный кабинет</h3>
+
+                        <p class="text1">Управляйте счетами, следите за своими финансами и легко связывайтесь с брокером через личный кабинет.</p>
+
+                        <a href="#" target="_blank" class="text1 benefit-main__link">Подробнее</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="text1 benefit-main__info">Узнать больше и скачайте наши торговые платформы для торговли Форекс и CFD</p>
+
+            <a href="#" target="_blank" class="btn">Попробовать платформу</a>
+
+        </div>
+
+    </section>
+    <section class="advantages-indexes">
+        <div class="container">
+            <h2>Наши преимущества</h2>
+            <p class="text1">Воспользуйтесь широкими движениями фондового рынка CFD на индексы на крупнейших финансовых рынках в мире.</p>
+
+            <div class="advantages-indexes__list">
+                <div class="advantages-indexes__item advantages-indexes__item--1">
+                    <div class="advantages-indexes__image"></div>
+                    <p class="text1">Низкие спреды от 0.5 пункта</p>
+                </div>
+
+                <div class="advantages-indexes__item advantages-indexes__item--2">
+                    <div class="advantages-indexes__image"></div>
+                    <p class="text1">Новости финансового рынка</p>
+                </div>
+
+                <div class="advantages-indexes__item advantages-indexes__item--3">
+                    <div class="advantages-indexes__image"></div>
+                    <p class="text1">Исполнение от 0.1 секунды</p>
+                </div>
+
+                <div class="advantages-indexes__item advantages-indexes__item--4">
+                    <div class="advantages-indexes__image"></div>
+                    <p class="text1">Аналитика рынка</p>
+                </div>
+
+                <div class="advantages-indexes__item advantages-indexes__item--5">
+                    <div class="advantages-indexes__image"></div>
+                    <p class="text1">>150 инструментов для торговли</p>
+                </div>
+
+                <div class="advantages-indexes__item advantages-indexes__item--6">
+                    <div class="advantages-indexes__image"></div>
+                    <p class="text1">Квалифицированная поддержка специалистов</p>
+                </div>
+            </div>
+
+            <div class="swiper swiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide advantages-indexes__item advantages-indexes__item--1">
+                        <div class="advantages-indexes__image"></div>
+                        <p class="text1">Низкие спреды от 0.5 пункта</p>
+                    </div>
+
+                    <div class="swiper-slide advantages-indexes__item advantages-indexes__item--2">
+                        <div class="advantages-indexes__image"></div>
+                        <p class="text1">Новости финансового рынка</p>
+                    </div>
+
+                    <div class="swiper-slide advantages-indexes__item advantages-indexes__item--3">
+                        <div class="advantages-indexes__image"></div>
+                        <p class="text1">Исполнение от 0.1 секунды</p>
+                    </div>
+
+                    <div class="swiper-slide advantages-indexes__item advantages-indexes__item--4">
+                        <div class="advantages-indexes__image"></div>
+                        <p class="text1">Аналитика рынка</p>
+                    </div>
+
+                    <div class="swiper-slide advantages-indexes__item advantages-indexes__item--5">
+                        <div class="advantages-indexes__image"></div>
+                        <p class="text1">>150 инструментов для торговли</p>
+                    </div>
+
+                    <div class="swiper-slide advantages-indexes__item advantages-indexes__item--6">
+                        <div class="advantages-indexes__image"></div>
+                        <p class="text1">Квалифицированная поддержка специалистов</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <a href="#" target="_blank" class="btn">Начать инвестировать</a>
+        </div>
+    </section>
+    <section class="start-main">
+        <div class="container">
+            <h2>Начать торговать просто</h2>
+
+            <div class="start-main__list">
+                <div class="start-main__item">
+                    <div class="start-main__box">
+                        <h3>Зарегистрируйтесь</h3>
+                        <p class="text1">Ведите имя и адрес электронной почты, чтобы начать торговать</p>
+                    </div>
+                </div>
+                <div class="start-main__item">
+                    <div class="start-main__box">
+                        <h3>Пополните счет</h3>
+                        <p class="text1">Начните инвестировать с 1 евро, торговать — со 100 евро</p>
+                    </div>
+                </div>
+                <div class="start-main__item">
+                    <div class="start-main__box">
+                        <h3>Торгуйте</h3>
+                        <p class="text1">Мы предлагаем более 180 инструментов для прибыльной торговли</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" target="_blank" class="btn">Зарегистрироваться</a>
+        </div>
+    </section>
+    <section class="banner-1">
+        <div class="container">
+            <div class="banner-1__box">
+                <div class="banner-1__content">
+                    <h2 class="banner-text">Выгодные инвестиции</h2>
+                    <p class="text2">Надежный брокер с двумя платформами, тысячами трейдеров и прозрачными условиями</p>
+                    <a href="#" target="_blank" class="btn-black">Открыть счёт</a>
+                </div>
+                <div class="banner-1__image"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__box">
+
+            <a href="/" class="footer__logo"></a>
+
+            <p class="text2">ваш ключ к миру высокоточных торгов</p>
+
+            <a href="#" target="_blank" class="btn-transparent">Начать торговать</a>
+
+        </div>
+
+        <nav class="footer__nav">
+
+            <ul class="menu">
+
+                <li class="menu-item">
+
+                    <a href="/">Главная</a>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="##">Торговля</a>
+
+                    <ul class="sub-menu">
+
+                        <li class="menu-item"><a href="/conditions.html">Торговые условия</a></li>
+
+                        <li class="menu-item"><a href="/platform.html">Торговая платформа</a></li>
+
+                        <li class="menu-item"><a href="/training.html">Обучение трейдингу</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="##">Аналитика</a>
+
+                    <ul class="sub-menu">
+
+                        <li class="menu-item"><a href="/analytics.html">Анализ рынка</a></li>
+
+                        <li class="menu-item"><a href="/news.html">Новости рынка</a></li>
+
+                        <li class="menu-item"><a href="/forecasts.html">Прогнозы рынка</a></li>
+
+                        <li class="menu-item"><a href="/quotes.html">Онлайн котировки</a></li>
+
+                        <li class="menu-item"><a href="/calendar.html">Экономический календарь</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="##">Инструменты</a>
+
+                    <ul class="sub-menu">
+
+                        <li class="menu-item"><a href="/stocks.html">Акции</a></li>
+
+                        <li class="menu-item"><a href="/indexes.html">Индексы</a></li>
+
+                        <li class="menu-item"><a href="/raw-material.html">Сырье</a></li>
+
+                        <li class="menu-item"><a href="/currencies.html">Валюты</a></li>
+
+                        <li class="menu-item"><a href="/cryptocurrencies.html">Криптовалюты</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="##">О компании</a>
+
+                    <ul class="sub-menu">
+
+                        <li class="menu-item"><a href="/about.html">О нас</a></li>
+
+                        <li class="menu-item"><a href="/contacts.html">Контакты</a></li>
+
+                        <li class="menu-item"><a href="/documents.html">Документы</a></li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <div class="footer__documents">
+
+                <a href="#" target="_blank">Политика AML KYC</a>
+
+                <a href="#" target="_blank">Политика возврата</a>
+
+                <a href="#" target="_blank">Уведомление о рисках</a>
+
+                <a href="#" target="_blank">Клиентское соглашение</a>
+
+                <a href="#" target="_blank">Политика конфиденциальности</a>
+
+            </div>
+
+        </nav>
+
+        <div class="footer__copyright">
+
+            <p class="text2">Уведомление о рисках: Инвестирование в группы высокого риска: (Forex) и контрактами на разницу (CFD) является спекулятивной операцией, включая высокий риск, и не подходит для каждого инвестора. Вы можете понести частичные, так и полные потери вложенных средств, поэтому мы не советуем инвестировать капитал, которым вы не можете рисковать. Вы должны знать о повышенном риске, связанном с использованием кредитного плеча. Мы настоятельно рекомендуем вам ознакомиться с условиями и услугами нашего веб-сайта, прежде чем начать пользоваться нашим сервисом.</p>
+
+            <p class="text2">Все права защищены. Socal Trade LTD</p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<div class="upButton">
+
+    <img src="../images/up-btn.svg" alt="кнопка наверх">
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+
+<script defer src="/js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -5,5 +5,5 @@
 package-lock.json
 /app/js/main.min.js
 /app/css
-/dist/*
+# /dist/*
 !/dist/.gitkeep
