@@ -42,6 +42,16 @@
         }
     }
 
+    .cookies {
+        a {
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--green);
+            }
+        }
+    }
+
     .article {
         &__post {
             a {
