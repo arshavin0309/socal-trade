@@ -93,6 +93,12 @@ if (tableShow) {
 
 for (let i = 0; i < tableBtn.length; i++) {
     tableBtn[i].addEventListener("click", () => {
+        if (tableBtn[i].textContent === 'Акции России' || tableBtn[i].textContent === 'Облигации') {
+            tableShow.style = 'display: none;';
+        } else {
+            tableShow.style = 'display: flex;';
+        };
+
         tableShow.textContent = "Показать еще";
         tableShow.classList.remove('active');
 

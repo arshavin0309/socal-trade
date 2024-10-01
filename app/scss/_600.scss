@@ -59,6 +59,12 @@
             width: 100%;
             gap: 15px;
         }
+
+        .btn {
+            &.mac {
+                margin-bottom: 60px;
+            }
+        }
     }
 
     .aside-news {
