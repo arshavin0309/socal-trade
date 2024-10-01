@@ -434,17 +434,6 @@
         }
     }
 
-    .pagination {
-        li {
-
-            &:nth-child(3),
-            &:nth-child(4),
-            &:nth-child(5) {
-                display: none;
-            }
-        }
-    }
-
     .documents-doc {
         margin-top: 60px;
 
