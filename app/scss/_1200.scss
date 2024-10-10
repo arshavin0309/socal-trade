@@ -89,6 +89,16 @@
         }
     }
 
+    .types-conditions {
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__item {
+            min-height: initial;
+        }
+    }
+
     .protection-about {
         &__list {
             grid-template-columns: 1fr 1fr;

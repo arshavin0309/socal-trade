@@ -5,10 +5,18 @@
         }
     }
 
-    .types-conditions__item {
-        &:nth-child(3) {
-            li {
-                color: var(--grey-text);
+    .types-conditions {
+        .container {
+            background: image-set(url(../images/types-conditions-coin.avif),
+                    url(../images/types-conditions-coin.webp),
+                    url(../images/types-conditions-coin.png)) left 130px top / contain no-repeat;
+        }
+
+        &__item {
+            &:nth-child(3) {
+                li {
+                    color: var(--grey-text);
+                }
             }
         }
     }
