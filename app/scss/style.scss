@@ -949,6 +949,55 @@ section {
     }
 }
 
+.language {
+    position: relative;
+
+    &__name {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-family: "Rubik", sans-serif;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: -0.03em;
+        color: var(--white);
+
+        &::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 8px;
+            background: url(../images/header-arrow.svg) center / contain no-repeat;
+        }
+    }
+
+    &__list {
+        position: absolute;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        left: -20px;
+        top: calc(100% + 15px);
+        background: var(--grey-text);
+        border-radius: 11px;
+        box-shadow: 0px 5px 10px 0px rgba(82, 81, 81, .55);
+        opacity: 0;
+        opacity: 1;
+        color: var(--black);
+    }
+
+    &__item {
+        font-family: "Rubik", sans-serif;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 130%;
+        letter-spacing: -0.03em;
+    }
+}
+
 .banner-1 {
     &__box {
         width: 100%;
