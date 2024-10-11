@@ -1,4 +1,31 @@
 @media (max-width: 1200px) {
+    .language {
+        order: 1;
+
+        &__name {
+            display: none;
+        }
+
+        &__list {
+            position: initial;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            opacity: 1;
+            background: none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        &__item {
+            color: var(--white);
+
+            &.active {
+                color: var(--green);
+            }
+        }
+    }
+
     .header {
         .container {
             &.active {
@@ -33,6 +60,13 @@
                 width: 100%;
 
                 &.active {
+                    &>a {
+                        &::after {
+                            transition: var(--transition);
+                            transform: rotate(-180deg);
+                        }
+                    }
+
                     .sub-menu {
                         width: calc(100% + 30px);
                         position: initial;

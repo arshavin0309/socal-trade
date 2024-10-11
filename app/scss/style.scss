@@ -287,19 +287,17 @@ section {
         }
 
         &>.menu-item {
-            &:not(:first-child) {
-                &>a {
-                    display: flex;
-                    gap: 5px;
-                    align-items: center;
+            &>a {
+                display: flex;
+                gap: 5px;
+                align-items: center;
 
-                    &::after {
-                        content: '';
-                        display: block;
-                        width: 20px;
-                        height: 8px;
-                        background: url(../images/header-arrow.svg) center / contain no-repeat;
-                    }
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 8px;
+                    background: url(../images/header-arrow.svg) center / contain no-repeat;
                 }
             }
         }
@@ -1152,19 +1150,15 @@ section {
                 cursor: initial;
             }
 
-            &:first-child {
-                display: none;
-            }
-
-            &:nth-child(2) {
+            &:nth-child(1) {
                 order: -3;
             }
 
-            &:nth-child(4) {
+            &:nth-child(3) {
                 order: -1;
             }
 
-            &:nth-child(5) {
+            &:nth-child(4) {
                 order: -2;
             }
         }
