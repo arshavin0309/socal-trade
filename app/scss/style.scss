@@ -975,6 +975,7 @@ section {
 
     &__list {
         position: absolute;
+        display: none;
         flex-direction: column;
         gap: 20px;
         padding: 20px;
@@ -984,7 +985,6 @@ section {
         border-radius: 11px;
         box-shadow: 0px 5px 10px 0px rgba(82, 81, 81, .55);
         opacity: 0;
-        opacity: 1;
         color: var(--black);
     }
 
@@ -995,6 +995,7 @@ section {
         font-weight: 300;
         line-height: 130%;
         letter-spacing: -0.03em;
+        color: var(--black);
     }
 }
 

@@ -1,4 +1,38 @@
 @media (min-width: 1200px) {
+    .language {
+        &:hover {
+            .language__list {
+                display: flex;
+                opacity: 1;
+                animation: show-sub-menu .2s ease-in-out 0s 1 normal none;
+            }
+        }
+
+        &__list {
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 50px;
+                top: -30px;
+                left: 0;
+            }
+
+            &:hover {
+                display: flex;
+                opacity: 1;
+            }
+        }
+
+        &__item {
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--blue);
+            }
+        }
+    }
+
     .header {
         .menu {
             a {
@@ -48,6 +82,21 @@
         }
 
         &.scrolled {
+            .language {
+                &__list {
+                    transition: var(--transition);
+                    background: var(--black);
+                }
+
+                &__item {
+                    color: var(--white);
+
+                    &:hover {
+                        color: var(--green);
+                    }
+                }
+            }
+
             .menu {
                 a {
                     &:hover {
