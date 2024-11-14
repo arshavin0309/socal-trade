@@ -586,7 +586,7 @@ section {
 
     &__elements {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 50px;
     }
 
@@ -896,6 +896,10 @@ section {
 
             .choice-main__rotate {
                 background: url(../images/choice-main-number-1.svg) center / contain no-repeat;
+
+                &--en {
+                    background: url(../images/choice-main-number-1-en.svg) center / contain no-repeat;
+                }
             }
         }
 
@@ -909,6 +913,10 @@ section {
 
             .choice-main__rotate {
                 background: url(../images/choice-main-number-2.svg) center / contain no-repeat;
+
+                &--en {
+                    background: url(../images/choice-main-number-2-en.svg) center / contain no-repeat;
+                }
             }
         }
 
@@ -919,6 +927,10 @@ section {
 
             .choice-main__rotate {
                 background: url(../images/choice-main-number-3.svg) center / contain no-repeat;
+
+                &--en {
+                    background: url(../images/choice-main-number-3-en.svg) center / contain no-repeat;
+                }
             }
         }
 
@@ -1856,6 +1868,12 @@ section {
                 letter-spacing: -0.03em;
                 color: #000000B2;
                 text-align: center;
+            }
+
+            &--en {
+                &::after {
+                    content: 'popular';
+                }
             }
         }
 

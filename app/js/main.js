@@ -71,50 +71,107 @@ let tableTable = document.querySelectorAll(".assets-conditions table");
 let tableShow = document.querySelector(".assets-conditions__more");
 let tableTr = document.querySelectorAll(".assets-conditions tr");
 
-if (tableShow) {
-    tableShow.addEventListener("click", () => {
-        if (tableShow.textContent === "Показать еще") {
-            for (let i = 0; i < tableTr.length; i++) {
-                tableTr[i].classList.add("active");
-            }
-            tableShow.textContent = "Скрыть";
-            tableShow.classList.add("active");
-        } else {
+// для русской версии
+
+if ($('html').is(':lang(ru)')) {
+
+    if (tableShow) {
+        tableShow.addEventListener("click", () => {
+            if (tableShow.textContent === "Показать еще") {
+                for (let i = 0; i < tableTr.length; i++) {
+                    tableTr[i].classList.add("active");
+                }
+                tableShow.textContent = "Скрыть";
+                tableShow.classList.add("active");
+            } else {
+                for (let i = 0; i < tableTr.length; i++) {
+                    tableTr[i].classList.remove("active");
+                }
+                tableShow.textContent = "Показать еще";
+                document.getElementById('table').scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                tableShow.classList.remove("active");
+            };
+        });
+    };
+
+    for (let i = 0; i < tableBtn.length; i++) {
+        tableBtn[i].addEventListener("click", () => {
+            if (tableBtn[i].textContent === 'Акции России' || tableBtn[i].textContent === 'Облигации') {
+                tableShow.style = 'display: none;';
+            } else {
+                tableShow.style = 'display: flex;';
+            };
+
+            tableShow.textContent = "Показать еще";
+            tableShow.classList.remove('active');
+
             for (let i = 0; i < tableTr.length; i++) {
                 tableTr[i].classList.remove("active");
-            }
-            tableShow.textContent = "Показать еще";
-            document.getElementById('table').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            };
 
-            tableShow.classList.remove("active");
-        };
-    });
-};
+            for (let n = 0; n < tableBtn.length; n++) {
+                tableBtn[n].classList.remove("active");
+                tableTable[n].classList.remove("active");
+            };
 
-for (let i = 0; i < tableBtn.length; i++) {
-    tableBtn[i].addEventListener("click", () => {
-        if (tableBtn[i].textContent === 'Акции России' || tableBtn[i].textContent === 'Облигации') {
-            tableShow.style = 'display: none;';
-        } else {
-            tableShow.style = 'display: flex;';
-        };
+            tableBtn[i].classList.add("active");
+            tableTable[i].classList.add("active");
+        });
+    };
+    
+}
 
-        tableShow.textContent = "Показать еще";
-        tableShow.classList.remove('active');
+// для английской версии
 
-        for (let i = 0; i < tableTr.length; i++) {
-            tableTr[i].classList.remove("active");
-        };
+if ($('html').is(':lang(en)')) {
 
-        for (let n = 0; n < tableBtn.length; n++) {
-            tableBtn[n].classList.remove("active");
-            tableTable[n].classList.remove("active");
-        };
+    if (tableShow) {
+        tableShow.addEventListener("click", () => {
+            if (tableShow.textContent === "Show more") {
+                for (let i = 0; i < tableTr.length; i++) {
+                    tableTr[i].classList.add("active");
+                }
+                tableShow.textContent = "Hide";
+                tableShow.classList.add("active");
+            } else {
+                for (let i = 0; i < tableTr.length; i++) {
+                    tableTr[i].classList.remove("active");
+                }
+                tableShow.textContent = "Show more";
+                document.getElementById('table').scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-        tableBtn[i].classList.add("active");
-        tableTable[i].classList.add("active");
-    });
-};
+                tableShow.classList.remove("active");
+            };
+        });
+    };
+
+    for (let i = 0; i < tableBtn.length; i++) {
+        tableBtn[i].addEventListener("click", () => {
+            if (tableBtn[i].textContent === 'Russian stocks' || tableBtn[i].textContent === 'Bonds') {
+                tableShow.style = 'display: none;';
+            } else {
+                tableShow.style = 'display: flex;';
+            };
+
+            tableShow.textContent = "Show more";
+            tableShow.classList.remove('active');
+
+            for (let i = 0; i < tableTr.length; i++) {
+                tableTr[i].classList.remove("active");
+            };
+
+            for (let n = 0; n < tableBtn.length; n++) {
+                tableBtn[n].classList.remove("active");
+                tableTable[n].classList.remove("active");
+            };
+
+            tableBtn[i].classList.add("active");
+            tableTable[i].classList.add("active");
+        });
+    };
+
+}
 
 $(document).ready(function () {
     $('.faq-currencies__list > li > .answer').hide();
@@ -250,3 +307,14 @@ document.querySelector('.cookies .btn').addEventListener('click', () => {
     document.querySelector('.cookies').style = 'display: none'
     setCookie('cookies', 'true', { 'max-age': 3600 * 24 * 365 })
 })
+
+if ($('html').is(':lang(en)')) {
+    $('.news--ru').css('display', 'none');
+    $('.forecasts--ru').css('display', 'none');
+}
+
+
+if ($('html').is(':lang(ru)')) {
+    $('.news--en').css('display', 'none');
+    $('.forecasts--en').css('display', 'none');
+}
