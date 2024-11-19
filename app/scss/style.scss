@@ -3555,10 +3555,20 @@ form {
 .wpcf7 form.invalid .wpcf7-response-output,
 .wpcf7 form.unaccepted .wpcf7-response-output,
 .wpcf7 form.payment-required .wpcf7-response-output {
-    color: var(--white);
+    color: var(--white) !important;
     border-radius: 10px;
     padding: 15px 20px;
     margin: 15px 0;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    color: var(--white) !important;
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+    color: var(--white) !important;
+	border-color: #dc3232; /* Red */
 }
 
 .form-info {
